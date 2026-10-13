@@ -7,6 +7,7 @@
   고른 표현의 유튜브 풀이 영상(제목·설명)을 근거로 Gemini 가 뜻·예문 초안과 카드 7장 문구·캡션·해시태그를 쓴다
   → 코드가 글자 수·개수를 검사하고, 넘으면 Gemini 에게 그 장만 다시 쓰게 한다(최대 2번)
   → 04_카드문구.json 저장. 뜻은 AI 초안이므로 게시 전 사람이 사전(우리말샘 등)과 대조해 승인한다.
+  → render_cards.py 로 카드 PNG 7장(AI가 매번 새 디자인 + 선생님 시그니처 고정, 코드 검사) → cards/ 폴더
 
 키(.env): YOUTUBE_API_KEY, GEMINI_API_KEY. 구글 트렌드는 키 없이 비공식 라이브러리(pytrends)를 쓴다.
 막히면 가장 최근 04_자료/후보_구글트렌드.csv 로 대신하고 결과요약에 그 사실을 적는다.
@@ -254,6 +255,14 @@ def run_make(a) -> int:
     print("Title:", card.get("title")); [print(f" {i}. {s}") for i, s in enumerate(card.get("quotes", []), 2)]
     print("캡션:", card.get("caption")); print("해시태그:", " ".join(card.get("hashtags", [])))
     print("검사 기록:", [h["problems"] or "통과" for h in history]); print("저장:", run_dir / "04_카드문구.json")
+    if a.no_render:
+        return 0
+    from render_cards import make_cards  # 디자인은 AI가 새로, 시그니처는 코드가 고정
+    r = make_cards(run_dir, use_ai=True, key=env["GEMINI_API_KEY"])
+    print(f"[카드 {r['status']}] Today's Korean #{r['series_no']} – 테마: {r['theme']}")
+    for t in r["attempts"]:
+        print(f"  디자인 시도 {t['try']}: {t['problems'] or '통과'}")
+    print("카드 PNG:", run_dir / "cards")
     return 0
 
 
@@ -261,7 +270,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="mode", required=True)
     f = sub.add_parser("find"); f.add_argument("--max", type=int, default=12); f.add_argument("--days", type=int, default=30)
-    m = sub.add_parser("make"); m.add_argument("--choose", required=True); m.add_argument("--run"); m.add_argument("--days", type=int, default=30)
+    m = sub.add_parser("make"); m.add_argument("--choose", required=True); m.add_argument("--run"); m.add_argument("--days", type=int, default=30); m.add_argument("--no-render", action="store_true")
     a = ap.parse_args()
     try:
         return run_find(a) if a.mode == "find" else run_make(a)

@@ -9,11 +9,12 @@
 3. **AI 검수** – Gemini 가 근거 영상 제목·설명을 읽고 정치·혐오 등 금지 주제와 일반 단어를 거른다
 4. **사람 선택** – `04_자료/run_<시각>/결과요약.md` 를 보고 표현 1개를 고른다
 5. **카드 문구** – Gemini 가 근거 영상으로 뜻·예문과 카드 7장 문구를 쓰고, 코드가 글자 수·해시태그 수를 검사해 넘은 부분만 최대 2번 다시 쓰게 한다
-6. **사람 승인 뒤 게시** – 뜻을 사전과 대조하고, 카드 PNG 를 만들어 Blotato 로 예약한다(이 저장소 밖)
+6. **카드 PNG 7장** – `render_cards.py`: 디자인은 매번 AI(Gemini)가 표현 분위기에 맞게 새로 짜고, 선생님 시그니처(@ozoda_korean 배지, Today's Korean #번호, 한글 표현 굵게 + 노란 밑줄·로마자 알약, 시그니처 노란색 #FFD43B, 고정된 마지막 장)는 코드가 넣는다. 코드가 글자 넘침·대비·시그니처 가려짐·한글 폰트를 검사하고, 걸리면 다시 디자인(최대 2번), 그래도 안 되면 기본 디자인
+7. **사람 승인 뒤 게시** – 뜻을 사전과 대조하고, 카드 PNG 를 만들어 Blotato 로 예약한다(이 저장소 밖)
 
 ## 실행
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt   # 카드 PNG 는 Chrome 이 설치돼 있어야 한다(playwright 가 설치된 Chrome 을 쓴다)
 cp .env.example .env        # 키 2개를 넣는다
 python3 run_pipeline.py find                       # 1부: 후보 표
 python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
