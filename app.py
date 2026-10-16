@@ -1,7 +1,8 @@
 """Today's Korean – 운영자용 웹 화면(Streamlit).
 
 운영자는 API 키를 몰라도 버튼만 누른다. 키는 서버에만 있다(내 컴퓨터는 .env, 배포 서버는 Streamlit Secrets).
-  ① 오늘의 후보 찾기  ② 표현 골라 카드 만들기  ③ 승인(내려받기) / 디자인 다시 만들기
+  ① 오늘의 후보 찾기(매일 아침 8시 GitHub Actions 가 자동으로 daily/ 에 만들어 둔다)
+  ② 표현 골라 카드 만들기  ③ 승인 → 내려받기 / Blotato 로 인스타 예약(기본 저녁 7시) / 디자인 다시 만들기
 실행: streamlit run app.py
 """
 from __future__ import annotations
@@ -14,12 +15,13 @@ import streamlit as st
 BASE = Path(__file__).parent
 DATA = BASE / "04_자료"
 DEMO = BASE / "samples" / "run_demo"
+DAILY = BASE / "daily"  # 매일 아침 자동 실행 결과(GitHub Actions)
 USAGE = DATA / "usage.json"
 DAILY_LIMIT = 5  # 하루 실행 횟수(후보 찾기 + 카드 만들기). 우리 키의 무료 한도를 지킨다
 
 # 배포 서버의 Secrets 를 환경변수로 옮긴다(화면에는 절대 보이지 않음)
 try:
-    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD"):
+    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID"):
         if k in st.secrets and not os.environ.get(k):
             os.environ[k] = str(st.secrets[k])
 except Exception:
@@ -43,7 +45,7 @@ def add_use() -> None:
 
 
 def latest_run() -> Path | None:
-    runs = sorted(DATA.glob("run_*"))
+    runs = sorted([*DATA.glob("run_*"), *DAILY.glob("run_*")], key=lambda p: p.name)
     return runs[-1] if runs else None
 
 
@@ -109,7 +111,7 @@ if st.button("🔍 오늘의 후보 찾기", disabled=demo or left <= 0):
 run_dir = Path(st.session_state.run_dir) if st.session_state.run_dir else None
 if run_dir and (run_dir / "03_AI검수.json").exists():
     items = candidates_table(run_dir)
-    st.caption(f"결과 폴더: {run_dir.name}" + (" (데모 예시)" if demo else ""))
+    st.caption(f"결과 폴더: {run_dir.name}" + (" (데모 예시)" if demo else " (아침 8시 자동 실행)" if run_dir.parent == DAILY else ""))
     st.dataframe([{"표현": c.get("clean") or c["expression"], "유튜브 풀이 영상": c["explainer_videos"],
                    "조회수": f'{c["views_total"]:,}', "검증": c["verdict"], "AI 검수": c.get("decision", ""),
                    "이유": c.get("reason", "")} for c in items], use_container_width=True, hide_index=True)
@@ -166,6 +168,31 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
                     st.rerun()
                 except Exception as e:
                     st.error(f"실패: {e}")
-        st.caption("승인한 카드는 Blotato 에서 인스타그램에 예약합니다(게시 자동 연결은 다음 단계).")
+
+        # ④ 예약
+        st.subheader("④ 인스타그램 예약 (Blotato)")
+        import blotato_post as bp
+        booked = run_dir / "06_예약.json"
+        if booked.exists():
+            b = load(booked)
+            st.success(f"예약됨: {b['scheduled_kst'].replace('T', ' ')} (번호 {b['post_submission_id']})")
+        else:
+            nxt = bp.next_post_time()
+            d1, d2 = st.columns(2)
+            day = d1.date_input("게시 날짜", nxt.date())
+            hour = d2.time_input("게시 시각(한국)", nxt.time().replace(tzinfo=None))
+            has_key = bool(os.environ.get("BLOTATO_API_KEY"))
+            if not has_key:
+                st.info("Blotato API 키가 아직 없습니다. 유료 플랜 결제 후 Secrets 에 BLOTATO_API_KEY 를 넣으면 이 버튼이 열립니다.")
+            if st.button("📅 승인한 카드로 인스타 예약", disabled=demo or not has_key or not (ok1 and ok2 and ok3)):
+                when = dt.datetime.combine(day, hour).replace(tzinfo=bp.KST)
+                with st.spinner("카드 7장을 올리고 예약하는 중…"):
+                    try:
+                        b = bp.schedule(run_dir, when)
+                        st.success(f"예약 완료: {b['scheduled_kst'].replace('T', ' ')}")
+                        st.rerun()
+                    except (RuntimeError, SystemExit) as e:
+                        st.error(f"예약 실패: {e}")
+            st.caption("체크 3개를 모두 해야(사람 승인) 예약 버튼이 열립니다.")
 else:
     st.info("아직 후보 표가 없습니다. ① 버튼을 누르거나 왼쪽에서 데모 모드를 켜세요.")

@@ -33,3 +33,8 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 
 ## 출처
 - `naver_datalab.py`, `judge.py` 는 수업(임보람 교수) 제공 코드다. `.env` 읽기 함수를 함께 쓴다.
+
+## 매일 자동 실행과 예약
+- **매일 아침 8시(한국)**: GitHub Actions(`.github/workflows/daily_find.yml`)가 후보 찾기만 돌려 `daily/run_<시각>/` 에 올린다. 웹 앱은 이 최신 후보 표를 보여 준다. 저장소 Settings → Secrets and variables → Actions 에 `YOUTUBE_API_KEY`, `GEMINI_API_KEY` 가 있어야 한다.
+- **고르기·카드·승인은 사람**이 웹 앱에서 한다.
+- **예약**: 승인 체크 3개 후 「📅 인스타 예약」→ `blotato_post.py` 가 카드 7장을 Blotato 에 올리고 캐러셀을 예약한다(기본 저녁 7시). Secrets 에 `BLOTATO_API_KEY`(유료 플랜) 필요. 키가 없으면 버튼이 잠긴다.
