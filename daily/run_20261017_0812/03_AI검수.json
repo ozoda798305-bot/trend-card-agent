@@ -1,0 +1,302 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "부캉 이",
+   "source": "구글 트렌드",
+   "evidence": "부캉 이 뜻",
+   "explainer_videos": 2,
+   "views_total": 107199,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "&quot;상어가 부산 새 명물 되나?&quot; &#39;부캉이&#39; 밈까지 등장, 무슨 일 / KNN",
+     "url": "https://www.youtube.com/watch?v=inTQZqAzb-k",
+     "description": "knn뉴스 #북항 #상어 #부캉이 부산 도심 한복판 수로에 나타난 상어 한 마리가 뜻밖의 '슈퍼스타'가 됐습니다. 제보 카톡 : 'KNN' 친구 ...",
+     "views": 105629
+    },
+    {
+     "title": "상어 부캉이 뜻·위치·종 총정리, 부산 북항에 10만 명 몰린 이유",
+     "url": "https://www.youtube.com/watch?v=YuITeotqsOY",
+     "description": "부산 도심에 상어 한 마리가 나타나자 평소와 전혀 다른 풍경이 만들어졌습니다. 부산 북항 친수공원 인공수로에 나타난 약 3~3.5m ...",
+     "views": 1570
+    }
+   ],
+   "clean": "부캉이",
+   "decision": "빼기",
+   "topic": "사건사고",
+   "reason": "부산 북항 수로에 상어가 나타난 이슈 및 사건사고에서 유래된 명칭입니다."
+  },
+  {
+   "expression": "좌아 하게",
+   "source": "구글 트렌드",
+   "evidence": "좌아 하게 뜻",
+   "explainer_videos": 9,
+   "views_total": 711417,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "이재명 대통령 “좌아하게”…무슨 뜻? / 채널A / 뉴스A",
+     "url": "https://www.youtube.com/watch?v=4uPrMBWOEVE",
+     "description": "이재명 대통령 “좌아하게”…무슨 뜻? [앵커] 이재명 대통령이 SNS에 글을 올렸는데, '좌아하게'는 표현을 썼습니다. 좌아하게, 부사인 ...",
+     "views": 402618
+    },
+    {
+     "title": "오타인 줄 알았더니 온라인 밈? 이재명 대통령 &quot;좌아하게&quot; 파장 / KNN",
+     "url": "https://www.youtube.com/watch?v=zGU9yg1Ov-I",
+     "description": "knn뉴스 #이재명대통령 #밈 이재명 대통령이 SNS에서 '좌아하게'라는 낯선 표현을 사용해 눈길을 끌었습니다. 제보 카톡 : 'KNN' 친구 ...",
+     "views": 95650
+    },
+    {
+     "title": "이 대통령 소셜미디어에 &quot;좌아하게&quot;…무슨 뜻이길래?｜지금 이 뉴스",
+     "url": "https://www.youtube.com/watch?v=EI7EW50YuB0",
+     "description": "이재명 대통령이 오늘(1일) 소셜미디어에 \"좌아하게\"라는 표현을 써 주목을 받았습니다. 이 대통령은 정부 국정 성과를 기록·홍보하는 ...",
+     "views": 86218
+    }
+   ],
+   "clean": "좌아하게",
+   "decision": "빼기",
+   "topic": "정치",
+   "reason": "정치인의 발언에서 비롯된 표현으로 금지 주제에 해당합니다."
+  },
+  {
+   "expression": "개천절",
+   "source": "구글 트렌드",
+   "evidence": "개천절 뜻",
+   "explainer_videos": 7,
+   "views_total": 15460,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "우리는 왜 개천절에 쉴까? 개천절의 역사적 의미 | 이중석 한국사",
+     "url": "https://www.youtube.com/watch?v=kEl3pLRwv7I",
+     "description": "이중석 선생님 맵핑 한능검 교재 구매하기 https://gouk.kr/Q5fGT8 왜 개천절은 10월 3일일까요? 우리는 언제부터 개천절을 공휴일로 ...",
+     "views": 4582
+    },
+    {
+     "title": "개천절, 무슨 날인지 정확히 아시나요?｜10월 3일의 진짜 의미",
+     "url": "https://www.youtube.com/watch?v=jZwk_N6T2jw",
+     "description": "10월 3일, 개천절. 많은 사람이 단군이 고조선을 세운 날로 기억하지만, '개천'은 글자 그대로 하늘이 열린다는 뜻을 담고 있습니다.",
+     "views": 3473
+    },
+    {
+     "title": "개천절 뜻과 유래｜왜 10월 3일을 ‘하늘이 열린 날’이라고 할까",
+     "url": "https://www.youtube.com/watch?v=Xxh2gXCY4qk",
+     "description": "개천절 뜻을 한자로 풀면 '하늘이 열린 것을 기념하는 날'입니다. 그런데 고조선 건국을 기념하는 날인데 왜 '건국절'이 아니라 '개천절' ...",
+     "views": 1959
+    }
+   ],
+   "clean": "개천절",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "명절 및 일반 국경일 단어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "줴줴 이야",
+   "source": "구글 트렌드",
+   "evidence": "줴줴 이야 뜻",
+   "explainer_videos": 7,
+   "views_total": 187059,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "진짜 무슨뜻이에요? ㅋㅋㅋ 아니 모르겠어요🙄 #줴줴이야",
+     "url": "https://www.youtube.com/watch?v=6o0d2wMtxQA",
+     "description": "",
+     "views": 96760
+    },
+    {
+     "title": "줴줴이야 뜻, 대체 무슨 말일까? 알고 보면 GG입니다",
+     "url": "https://www.youtube.com/watch?v=Lv6K54cdu8U",
+     "description": "요즘 유튜브나 게임 방송에서 자주 들리는 “아 줴줴이야~”. 무슨 뜻인지 궁금하셨나요? 알고 보면 게임 용어 GG에서 시작된 인터넷 밈 ...",
+     "views": 43153
+    },
+    {
+     "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+     "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4",
+     "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+     "views": 32792
+    }
+   ],
+   "clean": "줴줴이야",
+   "decision": "통과",
+   "topic": "",
+   "reason": "게임 용어 GG에서 유래한 인터넷 유행 표현이며 금지 주제에 해당하지 않습니다."
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "L을 가져가",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 유튜브 영상 제목 및 설명 등의 근거가 부족하여 확인이 필요합니다."
+  },
+  {
+   "expression": "한가위",
+   "source": "구글 트렌드",
+   "evidence": "한가위 뜻",
+   "explainer_videos": 6,
+   "views_total": 106924,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "한가위라는 순우리말에 담긴 뜻밖의 역사 (추석)",
+     "url": "https://www.youtube.com/watch?v=EW3GJUFRKhI",
+     "description": "한가위의 옛 이름 가배는 가을의 한가운데를 뜻하는 순우리말 가위에서 유래했습니다. 여기에 크다는 의미의 한이 붙어 우리가 아는 ...",
+     "views": 94909
+    },
+    {
+     "title": "&quot;안 와도 된다&quot; 그 말의 진짜 뜻 | 즐겁고 풍성한 한가위 되세요",
+     "url": "https://www.youtube.com/watch?v=AWCpfUx1ULE",
+     "description": "명절에 부모님이 \"안 와도 된다\"고 하시면, 그건 진심이 아닙니다. 혼자 사는 어머니는 추석 이 주 전부터 달력에 동그라미를 칩니다.",
+     "views": 9689
+    },
+    {
+     "title": "추석을 왜 ‘한가위’라고 부를까｜‘가위’의 뜻을 아시나요",
+     "url": "https://www.youtube.com/watch?v=xy6HatIFCNA",
+     "description": "추석을 우리는 '한가위'라고도 부릅니다. 그런데 한가위의 '가위'는 우리가 아는 자르는 가위와 전혀 관계가 없습니다. 옛말 '가배'에서 ...",
+     "views": 1649
+    }
+   ],
+   "clean": "한가위",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "명절을 뜻하는 일반 단어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "훈민정음",
+   "source": "구글 트렌드",
+   "evidence": "훈민정음 뜻",
+   "explainer_videos": 6,
+   "views_total": 6483,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "🎵 15세기 우리말로 듣는 세종대왕님의 큰 뜻 | 훈민정음 어제 서문",
+     "url": "https://www.youtube.com/watch?v=12QP-Ai9O0Q",
+     "description": "《훈민정음 어제 서문》은 세종대왕이 한글(훈민정음)을 만든 이유와 목적을 직접 밝힌 글입니다. 《훈민정음 어제 서문》은 ...",
+     "views": 1817
+    },
+    {
+     "title": "한글이 쉬워서 반대했다고? 세종과 신하들의 뜻밖의 논쟁  #한국사 #훈민정음 #세종대왕 #역사쇼츠 #한글",
+     "url": "https://www.youtube.com/watch?v=SBn_qMgYlek",
+     "description": "백성을 위해 쉬운 글자를 만들었는데, 왜 반대했을까요? 최만리 등은 쉬운 글자만 익히면 한문과 유교 공부를 소홀히 할 수 있다고 우려 ...",
+     "views": 1692
+    },
+    {
+     "title": "훈민정음에 나오는 ‘중국’은 무슨 뜻일까?",
+     "url": "https://www.youtube.com/watch?v=BipoRyNXRbo",
+     "description": "나랏말싸미 듕귁에 달아.” 익숙한 훈민정음 서문의 한 구절에서 시작된 궁금증. 명나라와 역대 왕조, 그리고 중국이라는 말의 뜻을 ...",
+     "views": 1352
+    }
+   ],
+   "clean": "훈민정음",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "역사적 용어 및 일반 단어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "먼 작귀",
+   "source": "구글 트렌드",
+   "evidence": "먼 작귀 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "먼작귀",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 유튜브 영상 정보가 없어 판단할 근거가 부족합니다."
+  },
+  {
+   "expression": "치이 카와",
+   "source": "구글 트렌드",
+   "evidence": "치이 카와 뜻",
+   "explainer_videos": 2,
+   "views_total": 72199,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "치이카와 캐릭터들 이름 뜻",
+     "url": "https://www.youtube.com/watch?v=9EW2Orj7qxg",
+     "description": "본 영상은 오락적 흥미 제공을 목적으로 제작되었으며 영상의 내용을 각색하여 주관적인 해석과 설명을 더한 콘텐츠입니다. 채널 ...",
+     "views": 41099
+    },
+    {
+     "title": "[극장판 치이카와: 인어 섬의 비밀]くつずれ(쿠츠즈레, 신발 때문에 난 상처) - 하지와레 | 한국어 가사, 독음, 뜻",
+     "url": "https://www.youtube.com/watch?v=IZ_BUiZHdNs",
+     "description": "극장판 치이카와: 인어 섬의 비밀 주제가 [OP] くつずれ (쿠츠즈레, 신발 때문에 난 상처) - 하치와레 가사, 독음 , 뜻 **개인적인 해석을 ...",
+     "views": 31100
+    }
+   ],
+   "clean": "치이카와",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "캐릭터 및 작품 이름만 있는 단어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "티원",
+   "source": "구글 트렌드",
+   "evidence": "티원 뜻",
+   "explainer_videos": 2,
+   "views_total": 3809,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "티-꾸(티원꾸미기라는뜻) #t1",
+     "url": "https://www.youtube.com/watch?v=SrGmf6oclnE",
+     "description": "",
+     "views": 2525
+    },
+    {
+     "title": "티원 뜻? T1은 왜 이름이 ‘티원’일까?",
+     "url": "https://www.youtube.com/watch?v=vZoiYuOzet4",
+     "description": "페이커가 소속된 T1, 이름은 무슨 뜻일까요? 과거 SK텔레콤 T1에서 시작해 2019년 컴캐스트와의 합작을 거치며 글로벌 e스포츠 ...",
+     "views": 1284
+    }
+   ],
+   "clean": "티원",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "e스포츠 팀 및 고유 명사 단체 이름입니다."
+  },
+  {
+   "expression": "한남",
+   "source": "구글 트렌드",
+   "evidence": "한남 뜻",
+   "explainer_videos": 1,
+   "views_total": 32809,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+     "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4",
+     "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+     "views": 32809
+    }
+   ],
+   "clean": "한남",
+   "decision": "빼기",
+   "topic": "욕설·비하·혐오 표현",
+   "reason": "특정 성별에 대한 비하 및 혐오 표현에 해당합니다."
+  },
+  {
+   "expression": "하치 와 레",
+   "source": "구글 트렌드",
+   "evidence": "하치 와 레 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "하치와레",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 유튜브 영상 정보가 없어 판단할 근거가 부족합니다."
+  }
+ ]
+}
