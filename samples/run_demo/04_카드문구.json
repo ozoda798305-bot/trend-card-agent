@@ -1,0 +1,66 @@
+{
+ "expression": "줴줴이야",
+ "status": "검사 통과",
+ "checks": [
+  {
+   "try": 0,
+   "model": "gemini-3.5-flash",
+   "problems": []
+  }
+ ],
+ "evidence": [
+  {
+   "title": "진짜 무슨뜻이에요? ㅋㅋㅋ 아니 모르겠어요🙄 #줴줴이야",
+   "description": "",
+   "url": "https://www.youtube.com/watch?v=6o0d2wMtxQA"
+  },
+  {
+   "title": "줴줴이야 뜻, 대체 무슨 말일까? 알고 보면 GG입니다",
+   "description": "요즘 유튜브나 게임 방송에서 자주 들리는 “아 줴줴이야~”. 무슨 뜻인지 궁금하셨나요? 알고 보면 게임 용어 GG에서 시작된 인터넷 밈 ...",
+   "url": "https://www.youtube.com/watch?v=Lv6K54cdu8U"
+  },
+  {
+   "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+   "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+   "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4"
+  }
+ ],
+ "card": {
+  "romanization": "jwe-jwe-iya",
+  "meaning_en": "A playful slang variation of the gaming term 'GG' (Good Game).",
+  "meaning_ko": "게임 용어 GG에서 시작된 장난스러운 변형 표현",
+  "meaning_confidence": "근거 일치",
+  "facts": [
+   {
+    "fact": "줴줴이야는 게임 용어 GG에서 시작되어 장난스럽게 변형된 인터넷 밈입니다.",
+    "source_url": "https://www.youtube.com/watch?v=Lv6K54cdu8U"
+   },
+   {
+    "fact": "유튜브나 게임 방송에서 자주 사용되며 들었을 때 중국어처럼 들리기도 합니다.",
+    "source_url": "https://www.youtube.com/watch?v=Knvuo9IfuP4"
+   }
+  ],
+  "title": "Learn Trending Korean Slang: 줴줴이야",
+  "quotes": [
+   "Have you heard 줴줴이야 (jwe-jwe-iya) on YouTube? Let's learn this slang!",
+   "줴줴이야 (jwe-jwe-iya) is a playful slang derived from the gaming term GG.",
+   "It originated as a playful variation of GG used in YouTube and gaming streams.",
+   "A: 이번 게임 끝났다. B: 아 줴줴이야~ (A: This game is done. B: Ah, jwe-jwe-iya~)",
+   "Use 줴줴이야 (jwe-jwe-iya) when you accept defeat playfully in a video game!",
+   "Save this post and share 줴줴이야 (jwe-jwe-iya) with your gamer friends!"
+  ],
+  "caption": "Want to sound like a native Korean gamer? Check out the trending slang 줴줴이야 (jwe-jwe-iya)! It originates from the gaming term GG and is used playfully on YouTube and streams when a game is over. Try using it next time you play games with friends!",
+  "hashtags": [
+   "#KoreanSlang",
+   "#LearnKorean",
+   "#KoreanMeme",
+   "#KoreanLanguage",
+   "#KoreanStudy"
+  ]
+ },
+ "human_todo": [
+  "뜻을 우리말샘·사전과 대조",
+  "금지 주제 다시 확인",
+  "승인 후 카드 PNG 만들고 Blotato 예약"
+ ]
+}

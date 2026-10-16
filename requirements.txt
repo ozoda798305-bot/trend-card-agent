@@ -2,3 +2,4 @@ requests
 pytrends
 pandas
 playwright
+streamlit

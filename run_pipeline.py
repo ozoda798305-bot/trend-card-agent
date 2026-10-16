@@ -30,7 +30,11 @@ LIMITS = {"title": 40, "quote_min": 20, "quote_max": 100, "quotes": 6, "caption"
 
 # ---------- 공통 ----------
 def keys() -> dict:
+    import os
     env = load_env(BASE / ".env" if (BASE / ".env").exists() else BASE.parent / ".env")
+    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY"):  # 배포 서버에서는 .env 대신 환경변수(Secrets)로 받는다
+        if not env.get(k) and os.environ.get(k):
+            env[k] = os.environ[k]
     miss = [k for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY") if not env.get(k)]
     if miss:
         sys.exit(f".env 에 {', '.join(miss)} 가 없다. 키를 넣고 다시 실행한다.")

@@ -160,7 +160,10 @@ def render(page_html: str, out_dir: Path) -> list[str]:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "cards.html").write_text(page_html, encoding="utf-8")
     with sync_playwright() as p:
-        b = p.chromium.launch(channel="chrome")
+        try:
+            b = p.chromium.launch(channel="chrome")  # 내 컴퓨터: 설치된 Chrome
+        except Exception:
+            b = p.chromium.launch()  # 서버: playwright 가 받은 Chromium
         pg = b.new_page(viewport={"width": W, "height": H}, device_scale_factor=1)
         pg.set_content(page_html, wait_until="networkidle")
         pg.evaluate("document.fonts.ready")
