@@ -1,4 +1,5 @@
 # 매일 아침 8시(한국 시각)에 후보 찾기만 자동으로 돌리고, 결과를 daily/ 폴더에 올린다.
+# 끝나면 「오늘의 후보」 GitHub 이슈를 만들어 운영자에게 이메일 알림을 보낸다(확인·승인은 웹 앱에서).
 # 웹 앱(Streamlit)이 다시 시작되며 daily/ 의 최신 후보 표를 보여 준다. 고르기·카드·승인·예약은 사람이 한다.
 # 키: 저장소 Settings → Secrets and variables → Actions 에 YOUTUBE_API_KEY, GEMINI_API_KEY
 name: daily-find
@@ -8,6 +9,7 @@ on:
   workflow_dispatch: {}      # Actions 화면에서 손으로도 돌릴 수 있다
 permissions:
   contents: write
+  issues: write
 jobs:
   find:
     runs-on: ubuntu-latest
@@ -28,7 +30,17 @@ jobs:
           mkdir -p daily
           latest=$(ls -d 04_자료/run_* | sort | tail -1)
           cp -r "$latest" daily/
+          echo "RUN_DIR=daily/$(basename "$latest")" >> "$GITHUB_ENV"
           git config user.name "daily-find-bot"
           git config user.email "actions@users.noreply.github.com"
           git add daily
-          git commit -m "매일 후보 찾기 $(date +%F)" && git push || echo "바뀐 것 없음"
+          git commit -m "매일 후보 찾기 $(date +%F)" || echo "바뀐 것 없음"
+          git pull --rebase -q && git push
+      - name: 오늘의 후보 알림(GitHub 이슈 → 이메일)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python daily_notify.py "$RUN_DIR" title.txt body.md
+          gh label create daily --color FFD43B --description "아침 자동 실행 알림" --force
+          for n in $(gh issue list --label daily --state open --json number --jq '.[].number'); do gh issue close "$n"; done
+          gh issue create --title "$(cat title.txt)" --body-file body.md --label daily
