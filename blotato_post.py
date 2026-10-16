@@ -1,7 +1,7 @@
 """승인한 카드 7장 + 캡션을 Blotato 로 인스타그램에 예약한다(사람 승인 뒤에만 부른다).
 
 사용법  python3 blotato_post.py --run 04_자료/run_<시각> [--at "2026-10-17 19:00"]
-  --at 을 빼면 다음 저녁 7시(한국 시각)로 예약한다.
+  --at 을 빼면 그 실행(run_<날짜>)이 시작된 날 저녁 7시(한국 시각)로 예약한다. 이미 지났으면 다음 날 7시.
 키: BLOTATO_API_KEY (.env 또는 Secrets). Blotato 유료 플랜에서 발급된다(무료 체험에는 API 가 없다).
 키가 없으면 FAKE 로 돈다: 보낼 요청을 그대로 만들어 06_예약.json 에 저장하고, Blotato 는 부르지 않는다(실제 게시 없음).
 흐름: ① 인스타 계정 ID 찾기 ② 카드 PNG 7장을 Blotato 저장소에 올리기(presigned upload) ③ 캐러셀 게시물 예약
@@ -32,6 +32,17 @@ def next_post_time(now: dt.datetime | None = None) -> dt.datetime:
     now = now or dt.datetime.now(KST)
     t = now.replace(hour=POST_HOUR, minute=0, second=0, microsecond=0)
     return t if t > now + dt.timedelta(minutes=10) else t + dt.timedelta(days=1)
+
+
+def run_post_time(run_dir: Path, now: dt.datetime | None = None) -> dt.datetime:
+    """실행이 시작된 날(폴더 이름 run_YYYYMMDD_HHMM)의 저녁 7시. 이미 지났으면 다음 저녁 7시."""
+    now = now or dt.datetime.now(KST)
+    try:
+        day = dt.datetime.strptime(run_dir.name.split("_")[1], "%Y%m%d").date()
+    except (IndexError, ValueError):
+        return next_post_time(now)
+    t = dt.datetime.combine(day, dt.time(POST_HOUR), tzinfo=KST)
+    return t if t > now + dt.timedelta(minutes=10) else next_post_time(now)
 
 
 def _req(method: str, path: str, key: str, **kw):
@@ -116,7 +127,7 @@ def main() -> int:
     ap.add_argument("--run", required=True)
     ap.add_argument("--at", help='한국 시각 "YYYY-MM-DD HH:MM". 빼면 다음 저녁 7시')
     a = ap.parse_args()
-    when = dt.datetime.strptime(a.at, "%Y-%m-%d %H:%M").replace(tzinfo=KST) if a.at else next_post_time()
+    when = dt.datetime.strptime(a.at, "%Y-%m-%d %H:%M").replace(tzinfo=KST) if a.at else run_post_time(Path(a.run))
     try:
         r = schedule(Path(a.run), when) if has_key() else fake_schedule(Path(a.run), when)
     except RuntimeError as e:

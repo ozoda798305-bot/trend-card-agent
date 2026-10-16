@@ -13,6 +13,12 @@ from types import SimpleNamespace
 
 import streamlit as st
 
+os.environ["TZ"] = "Asia/Seoul"  # 서버(UTC)에서도 폴더 이름·하루 횟수·게시 날짜를 한국 날짜로 맞춘다
+try:
+    import time; time.tzset()
+except AttributeError:
+    pass
+
 BASE = Path(__file__).parent
 DATA = BASE / "04_자료"
 DEMO = BASE / "samples" / "run_demo"
@@ -185,13 +191,10 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
                 with st.expander("Blotato 에 보낼 요청 보기"):
                     st.json(b["request"])
         else:
-            nxt = bp.next_post_time()
-            d1, d2 = st.columns(2)
-            day = d1.date_input("게시 날짜", nxt.date())
-            hour = d2.time_input("게시 시각(한국)", nxt.time().replace(tzinfo=None))
+            when = bp.run_post_time(run_dir)  # 실행이 시작된 날 저녁 7시(지났으면 다음 날 7시)
+            st.write(f"게시 시각(자동): **{when:%Y-%m-%d %H:%M}** (한국)")
             label = "📅 승인한 카드로 인스타 예약" + ("" if real else " (FAKE)")
             if st.button(label, disabled=demo or not (ok1 and ok2 and ok3)):
-                when = dt.datetime.combine(day, hour).replace(tzinfo=bp.KST)
                 with st.spinner("예약 요청을 만드는 중…"):
                     try:
                         bp.schedule(run_dir, when) if real else bp.fake_schedule(run_dir, when)
