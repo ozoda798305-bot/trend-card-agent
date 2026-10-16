@@ -3,3 +3,4 @@ pytrends
 pandas
 playwright
 streamlit
+Authlib>=1.3.2

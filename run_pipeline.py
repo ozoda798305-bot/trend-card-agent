@@ -165,7 +165,8 @@ def run_find(a) -> int:
         k = c["expression"].replace(" ", "")
         if k not in seen:
             seen.add(k); merged.append(c)
-    used = used_store.used_map()  # 이미 쓴 표현은 영원히 다시 쓰지 않는다: 검증·AI 검수 전에 뺀다
+    # 이미 쓴 표현은 영원히 다시 쓰지 않는다. 후보는 모두가 함께 쓰므로 --user 를 줄 때만 그 사람 기준으로 미리 뺀다
+    used = used_store.used_map(a.user) if getattr(a, "user", None) else {}
     already = [c for c in merged if used_store.norm(c["expression"]) in used]
     merged = [c for c in merged if used_store.norm(c["expression"]) not in used][: a.max]
     if already:
@@ -246,7 +247,8 @@ def check(card: dict) -> list[str]:
 
 def run_make(a) -> int:
     env = keys()
-    u = used_store.used_map().get(used_store.norm(a.choose))
+    uid = getattr(a, "user", None) or used_store.OWNER
+    u = used_store.used_map(uid).get(used_store.norm(a.choose))
     if u:
         sys.exit(f"「{a.choose}」는 {u['date']} Today's Korean #{u['series_no']}에서 이미 썼다. 다른 표현을 고른다.")
     runs = sorted(DATA.glob("run_*"))
@@ -278,7 +280,7 @@ def run_make(a) -> int:
     if a.no_render:
         return 0
     from render_cards import make_cards  # 디자인은 AI가 새로, 시그니처는 코드가 고정
-    r = make_cards(run_dir, use_ai=True, key=env["GEMINI_API_KEY"])
+    r = make_cards(run_dir, use_ai=True, key=env["GEMINI_API_KEY"], uid=uid)
     print(f"[카드 {r['status']}] Today's Korean #{r['series_no']} – 테마: {r['theme']}")
     for t in r["attempts"]:
         print(f"  디자인 시도 {t['try']}: {t['problems'] or '통과'}")
@@ -289,8 +291,8 @@ def run_make(a) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="mode", required=True)
-    f = sub.add_parser("find"); f.add_argument("--max", type=int, default=12); f.add_argument("--days", type=int, default=30)
-    m = sub.add_parser("make"); m.add_argument("--choose", required=True); m.add_argument("--run"); m.add_argument("--days", type=int, default=30); m.add_argument("--no-render", action="store_true")
+    f = sub.add_parser("find"); f.add_argument("--max", type=int, default=12); f.add_argument("--days", type=int, default=30); f.add_argument("--user")
+    m = sub.add_parser("make"); m.add_argument("--choose", required=True); m.add_argument("--run"); m.add_argument("--days", type=int, default=30); m.add_argument("--no-render", action="store_true"); m.add_argument("--user", help="사용자 id(기본 owner)")
     a = ap.parse_args()
     try:
         return run_find(a) if a.mode == "find" else run_make(a)

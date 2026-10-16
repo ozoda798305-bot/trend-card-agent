@@ -128,13 +128,13 @@ def esc(s: str) -> str:
     return html.escape(s or "")
 
 
-def next_series_no() -> int:
-    """#N = 이미 쓴(승인·예약한) 표현 개수 + 1. 디자인을 다시 만들어도 같은 번호."""
+def next_series_no(uid: str = "owner") -> int:
+    """#N = 이 사람이 이미 쓴(승인·예약한) 표현 개수 + 1. 디자인을 다시 만들어도 같은 번호."""
     import used_store
-    return used_store.next_series_no()
+    return used_store.next_series_no(uid)
 
 
-def build_html(card: dict, expr: str, design: dict, no: int) -> str:
+def build_html(card: dict, expr: str, design: dict, no: int, account: str = ACCOUNT) -> str:
     roman = card.get("romanization", "")
     texts = [card.get("title", "")] + card.get("quotes", [])[:6]
     slots = {"EXPR": f'<span class="sig-expr">{esc(expr)}</span>', "ROMAN": f'<span class="sig-roman">{esc(roman)}</span>'}
@@ -145,11 +145,11 @@ def build_html(card: dict, expr: str, design: dict, no: int) -> str:
         frag = frag.replace("{{ROMAN}}", slots["ROMAN"])
         frag = frag.replace("{{TEXT}}", f'<span data-slot="본문" style="display:block">{esc(texts[i])}</span>')
         pages.append(frag)
-    sig = f'<div class="sig-badge">{esc(ACCOUNT)}</div><div class="sig-series">{esc(SERIES)} #{no}</div>'
+    sig = f'<div class="sig-badge">{esc(account)}</div><div class="sig-series">{esc(SERIES)} #{no}</div>'
     body = "".join(f'<section class="card"><div class="design">{p}</div>{sig}</section>' for p in pages)
     body += (f'<section class="card"><div class="design last"><div class="cta">Save &amp; Follow</div>'
              f'<div class="txt" data-slot="본문">{esc(texts[6] if len(texts) > 6 else "")}</div>'
-             f'<div class="acc">{esc(ACCOUNT)}</div></div>{sig}</section>')
+             f'<div class="acc">{esc(account)}</div></div>{sig}</section>')
     return (f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><link rel="stylesheet" href="{FONT_CSS}">'
             f'<style>{design["css"]}\n{SIGNATURE_CSS}</style></head><body>{body}</body></html>')
 
@@ -204,10 +204,13 @@ def ai_design(card: dict, expr: str, last_theme: str, key: str) -> dict:
     return d
 
 
-def make_cards(run_dir: Path, use_ai: bool = True, key: str = "") -> dict:
+def make_cards(run_dir: Path, use_ai: bool = True, key: str = "", uid: str = "owner") -> dict:
+    """uid: 사용자 id. 배지 계정 이름과 #번호를 그 사람 것으로 쓴다."""
+    import used_store
     data = json.loads((run_dir / "04_카드문구.json").read_text(encoding="utf-8"))
     card, expr = data["card"], data["expression"]
-    no = next_series_no()
+    no = next_series_no(uid)
+    account = used_store.handle(uid) or ACCOUNT
     last_theme = ""
     try:
         last_theme = json.loads(COUNTER.read_text(encoding="utf-8")).get("last_theme", "")
@@ -221,19 +224,18 @@ def make_cards(run_dir: Path, use_ai: bool = True, key: str = "") -> dict:
                 design = ai_design(card, expr, last_theme, key)
             except Exception as e:
                 attempts.append({"try": i, "theme": "", "problems": [f"디자인 생성 실패: {e}"]}); design = None; continue
-            probs = render(build_html(card, expr, design, no), run_dir / "cards")
+            probs = render(build_html(card, expr, design, no, account), run_dir / "cards")
             attempts.append({"try": i, "theme": design.get("theme", ""), "problems": probs})
             if not probs:
                 break
             design = None
     if design is None:
         design = DEFAULT_DESIGN
-        probs = render(build_html(card, expr, design, no), run_dir / "cards")
+        probs = render(build_html(card, expr, design, no, account), run_dir / "cards")
         attempts.append({"try": "기본 디자인", "theme": "기본", "problems": probs})
-    result = {"series_no": no, "theme": design.get("theme", ""), "design": design, "attempts": attempts,
+    result = {"series_no": no, "account": account, "theme": design.get("theme", ""), "design": design, "attempts": attempts,
               "status": "검사 통과" if not attempts[-1]["problems"] else "확인 필요", "files": [f"cards/card-{i}.png" for i in range(1, 8)]}
     (run_dir / "05_카드디자인.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
-    COUNTER.parent.mkdir(parents=True, exist_ok=True)
     COUNTER.parent.mkdir(parents=True, exist_ok=True)
     COUNTER.write_text(json.dumps({"last_theme": result["theme"]}, ensure_ascii=False), encoding="utf-8")
     return result
