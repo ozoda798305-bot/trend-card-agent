@@ -163,7 +163,9 @@ def render(page_html: str, out_dir: Path) -> list[str]:
         try:
             b = p.chromium.launch(channel="chrome")  # 내 컴퓨터: 설치된 Chrome
         except Exception:
-            b = p.chromium.launch()  # 서버: playwright 가 받은 Chromium
+            sys_chromium = next((x for x in ("/usr/bin/chromium", "/usr/bin/chromium-browser") if Path(x).exists()), None)
+            # 배포 서버(Streamlit Cloud): packages.txt 로 설치한 시스템 Chromium, 없으면 playwright 기본 Chromium
+            b = p.chromium.launch(executable_path=sys_chromium, args=["--no-sandbox"]) if sys_chromium else p.chromium.launch()
         pg = b.new_page(viewport={"width": W, "height": H}, device_scale_factor=1)
         pg.set_content(page_html, wait_until="networkidle")
         pg.evaluate("document.fonts.ready")
