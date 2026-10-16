@@ -129,10 +129,9 @@ def esc(s: str) -> str:
 
 
 def next_series_no() -> int:
-    try:
-        return json.loads(COUNTER.read_text(encoding="utf-8")).get("next", 1)
-    except Exception:
-        return 1
+    """#N = 이미 쓴(승인·예약한) 표현 개수 + 1. 디자인을 다시 만들어도 같은 번호."""
+    import used_store
+    return used_store.next_series_no()
 
 
 def build_html(card: dict, expr: str, design: dict, no: int) -> str:
@@ -235,7 +234,8 @@ def make_cards(run_dir: Path, use_ai: bool = True, key: str = "") -> dict:
               "status": "검사 통과" if not attempts[-1]["problems"] else "확인 필요", "files": [f"cards/card-{i}.png" for i in range(1, 8)]}
     (run_dir / "05_카드디자인.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
     COUNTER.parent.mkdir(parents=True, exist_ok=True)
-    COUNTER.write_text(json.dumps({"next": no + 1, "last_theme": result["theme"]}, ensure_ascii=False), encoding="utf-8")
+    COUNTER.parent.mkdir(parents=True, exist_ok=True)
+    COUNTER.write_text(json.dumps({"last_theme": result["theme"]}, ensure_ascii=False), encoding="utf-8")
     return result
 
 

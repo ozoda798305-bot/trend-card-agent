@@ -28,7 +28,7 @@ DAILY_LIMIT = 5  # 하루 실행 횟수(후보 찾기 + 카드 만들기). 우�
 
 # 배포 서버의 Secrets 를 환경변수로 옮긴다(화면에는 절대 보이지 않음)
 try:
-    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID"):
+    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID", "GITHUB_TOKEN"):
         if k in st.secrets and not os.environ.get(k):
             os.environ[k] = str(st.secrets[k])
 except Exception:
@@ -62,7 +62,7 @@ def load(p: Path):
 
 def candidates_table(run_dir: Path) -> list[dict]:
     items = load(run_dir / "03_AI검수.json")["items"]
-    order = {"통과": 0, "사람 확인": 1, "빼기": 2}
+    order = {"통과": 0, "사람 확인": 1, "빼기": 2, "이미 씀": 3}
     items.sort(key=lambda c: (order.get(c.get("decision"), 3), -c.get("explainer_videos", 0), -c.get("views_total", 0)))
     return items
 
@@ -125,8 +125,13 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
 
     # ② 카드
     st.subheader("② 표현 골라 카드 만들기")
-    options = [c.get("clean") or c["expression"] for c in items if c.get("decision") != "빼기"]
-    choice = st.selectbox("표현 (「빼기」는 목록에서 제외)", options) if options else None
+    import used_store
+    used = used_store.used_map()
+    options = [c.get("clean") or c["expression"] for c in items if c.get("decision") not in ("빼기", "이미 씀")
+               and used_store.norm(c.get("clean") or c["expression"]) not in used]
+    choice = st.selectbox("표현 (「빼기」·「이미 씀」은 목록에서 제외)", options) if options else None
+    if not options:
+        st.warning("고를 수 있는 새 표현이 없습니다. 내일 다시 찾거나 ① 버튼으로 새로 찾으세요.")
     st.caption("「사람 확인」 표현은 근거 영상을 직접 보고 고릅니다.")
     if st.button("🎨 카드 만들기", disabled=demo or left <= 0 or not choice):
         import run_pipeline as rp
@@ -198,6 +203,8 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
                 with st.spinner("예약 요청을 만드는 중…"):
                     try:
                         bp.schedule(run_dir, when) if real else bp.fake_schedule(run_dir, when)
+                        # 승인·예약한 표현은 「이미 쓴 표현」에 넣어 다시는 후보로 쓰지 않는다
+                        used_store.add(data["expression"], dsg.get("series_no", used_store.next_series_no()), run_dir.name)
                         st.rerun()
                     except (RuntimeError, SystemExit) as e:
                         st.error(f"예약 실패: {e}")

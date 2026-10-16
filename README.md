@@ -39,3 +39,9 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 - **고르기·카드·승인은 사람**이 웹 앱에서 한다.
 - **예약(④)**: 승인 체크 3개 뒤 「📅 예약」→ `blotato_post.py`. 게시 시각은 사람이 고르지 않고 **실행이 시작된 날 저녁 7시**로 자동으로 정한다(이미 지났으면 다음 날 7시). Blotato API 는 유료 플랜 전용이라 키가 없으면 **FAKE** 로 돈다: 보낼 요청(캡션·이미지 7장·게시 시각)을 `06_예약.json` 에 저장만 하고 Blotato 는 부르지 않는다. 키(`BLOTATO_API_KEY`)를 넣으면 같은 버튼이 실제 예약을 한다.
 - 실제 게시는 사람이 인스타 앱이나 Meta Business Suite 예약 기능으로 한다.
+
+## 이미 쓴 표현은 다시 쓰지 않는다
+- 승인 뒤 ④ 예약 버튼을 누르면 그 표현이 `used_expressions.json` 에 들어간다(날짜·Today's Korean 번호·결과 폴더).
+- 다음 후보 찾기는 이 목록의 표현(띄어쓰기 무시)을 검증·AI 검수 전에 빼고 표에 「이미 씀」으로 표시한다. 카드 만들기도 막는다. **영원히 금지.**
+- 「Today's Korean #N」 = 이미 쓴 표현 개수 + 1. 디자인을 다시 만들어도 번호는 같다.
+- 웹 서버의 파일은 재시작 때 지워지므로, Streamlit Secrets 에 `GITHUB_TOKEN`(이 저장소만, Contents 읽기·쓰기 fine-grained token)을 넣으면 앱이 GitHub 의 목록을 직접 고친다.

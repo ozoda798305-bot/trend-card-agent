@@ -19,6 +19,7 @@ from pathlib import Path
 
 import find_candidates as fc
 import youtube_check as yt
+import used_store
 from naver_datalab import load_env
 
 BASE = Path(__file__).parent
@@ -164,7 +165,11 @@ def run_find(a) -> int:
         k = c["expression"].replace(" ", "")
         if k not in seen:
             seen.add(k); merged.append(c)
-    merged = merged[: a.max]
+    used = used_store.used_map()  # 이미 쓴 표현은 영원히 다시 쓰지 않는다: 검증·AI 검수 전에 뺀다
+    already = [c for c in merged if used_store.norm(c["expression"]) in used]
+    merged = [c for c in merged if used_store.norm(c["expression"]) not in used][: a.max]
+    if already:
+        log.append(f"이미 쓴 표현 {len(already)}개 제외")
     save(run_dir / "01_후보.json", {"log": log, "candidates": merged, "explainer_videos": vids})
     verified = verify(merged, env["YOUTUBE_API_KEY"], a.days)
     save(run_dir / "02_유튜브검증.json", verified)
@@ -173,8 +178,16 @@ def run_find(a) -> int:
     except RuntimeError as e:  # Gemini 가 바쁘면 멈추지 않고 사람이 검수하도록 표시한다
         model = f"실패({e})"
         screened = [{**c, "clean": "", "decision": "사람 확인", "topic": "", "reason": "AI 검수 실패, 사람이 근거 영상으로 판단"} for c in verified]
+    def used_row(c, u):
+        return {**c, "explainer_videos": c.get("explainer_videos", 0), "views_total": c.get("views_total", 0), "verdict": c.get("verdict", "-"),
+                "clean": c.get("clean", ""), "decision": "이미 씀", "topic": "", "reason": f"{u['date']} Today's Korean #{u['series_no']}에서 이미 씀"}
+    keep = []
+    for c in screened:  # AI가 다듬은 표현(clean)이 이미 쓴 것과 같으면 그것도 뺀다
+        u = used.get(used_store.norm(c.get("clean") or "")) or used.get(used_store.norm(c["expression"]))
+        keep.append(used_row(c, u) if u else c)
+    screened = keep + [used_row(c, used[used_store.norm(c["expression"])]) for c in already]
     save(run_dir / "03_AI검수.json", {"model": model, "items": screened})
-    order = {"통과": 0, "사람 확인": 1, "빼기": 2}
+    order = {"통과": 0, "사람 확인": 1, "빼기": 2, "이미 씀": 3}
     screened.sort(key=lambda c: (order.get(c["decision"], 3), -c["explainer_videos"], -c["views_total"]))
     lines = [f"# 후보 표현 ({dt.datetime.now():%Y-%m-%d %H:%M})", "", "수집: " + " / ".join(log), f"검수 모델: {model}", "",
              "| 표현 | 출처 | 유튜브 풀이 영상 | 조회수 | 검증 | AI 검수 | 이유 |", "|---|---|---|---|---|---|---|"]
@@ -233,6 +246,9 @@ def check(card: dict) -> list[str]:
 
 def run_make(a) -> int:
     env = keys()
+    u = used_store.used_map().get(used_store.norm(a.choose))
+    if u:
+        sys.exit(f"「{a.choose}」는 {u['date']} Today's Korean #{u['series_no']}에서 이미 썼다. 다른 표현을 고른다.")
     runs = sorted(DATA.glob("run_*"))
     run_dir = BASE / a.run if a.run else (runs[-1] if runs else None)
     if not run_dir or not (run_dir / "02_유튜브검증.json").exists():
