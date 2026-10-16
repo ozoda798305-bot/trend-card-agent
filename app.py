@@ -2,7 +2,8 @@
 
 운영자는 API 키를 몰라도 버튼만 누른다. 키는 서버에만 있다(내 컴퓨터는 .env, 배포 서버는 Streamlit Secrets).
   ① 오늘의 후보 찾기(매일 아침 8시 GitHub Actions 가 자동으로 daily/ 에 만들어 둔다)
-  ② 표현 골라 카드 만들기  ③ 승인 → 내려받기 / 디자인 다시 만들기  ④ 게시·예약은 사람이 직접
+  ② 표현 골라 카드 만들기  ③ 승인 → 내려받기 / 디자인 다시 만들기
+  ④ Blotato 예약(키가 없으면 FAKE: 요청만 저장, 실제 게시는 사람이 직접)
 실행: streamlit run app.py
 """
 from __future__ import annotations
@@ -169,11 +170,36 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
                 except Exception as e:
                     st.error(f"실패: {e}")
 
-        # ④ 게시는 사람이 직접(인스타 앱·Meta Business Suite 예약 기능)
-        st.subheader("④ 인스타그램 게시 (사람이 직접)")
-        st.write("게시는 자동으로 하지 않습니다. 승인한 zip 의 카드 7장과 아래 캡션으로 사람이 직접 올리거나 예약합니다.")
-        st.markdown("- 휴대폰: 인스타 앱 → 새 게시물 → 카드 7장 → 캡션 붙여넣기 → **고급 설정 → 이 게시물 예약** (저녁 7시 권장)\n"
-                    "- 컴퓨터: **Meta Business Suite** → 게시물 만들기 → 예약")
+        # ④ 예약(Blotato). 키가 없으면 FAKE: 보낼 요청만 만들어 저장하고 실제 게시는 하지 않는다
+        st.subheader("④ 인스타그램 예약 (Blotato)")
+        import blotato_post as bp
+        real = bp.has_key()
+        if not real:
+            st.warning("FAKE 모드: Blotato API 키가 없어(유료 플랜 전용) 실제로 예약·게시하지 않습니다. 보낼 요청만 만들어 저장합니다.")
+        booked = run_dir / "06_예약.json"
+        if booked.exists():
+            b = load(booked)
+            tag = " (FAKE · 실제 게시 없음)" if b.get("mode") == "FAKE" else ""
+            st.success(f"예약됨{tag}: {b['scheduled_kst'].replace('T', ' ')} · 번호 {b['post_submission_id']}")
+            if b.get("request"):
+                with st.expander("Blotato 에 보낼 요청 보기"):
+                    st.json(b["request"])
+        else:
+            nxt = bp.next_post_time()
+            d1, d2 = st.columns(2)
+            day = d1.date_input("게시 날짜", nxt.date())
+            hour = d2.time_input("게시 시각(한국)", nxt.time().replace(tzinfo=None))
+            label = "📅 승인한 카드로 인스타 예약" + ("" if real else " (FAKE)")
+            if st.button(label, disabled=demo or not (ok1 and ok2 and ok3)):
+                when = dt.datetime.combine(day, hour).replace(tzinfo=bp.KST)
+                with st.spinner("예약 요청을 만드는 중…"):
+                    try:
+                        bp.schedule(run_dir, when) if real else bp.fake_schedule(run_dir, when)
+                        st.rerun()
+                    except (RuntimeError, SystemExit) as e:
+                        st.error(f"예약 실패: {e}")
+            st.caption("체크 3개를 모두 해야(사람 승인) 예약 버튼이 열립니다.")
+        st.markdown("**실제 게시는 사람이 직접**: 인스타 앱 → 새 게시물 → 카드 7장 → 캡션 붙여넣기 → 고급 설정 → 이 게시물 예약 (또는 Meta Business Suite)")
         st.code(card.get("caption", "") + "\n\n" + " ".join(card.get("hashtags", [])), language=None)
 else:
     st.info("아직 후보 표가 없습니다. ① 버튼을 누르거나 왼쪽에서 데모 모드를 켜세요.")

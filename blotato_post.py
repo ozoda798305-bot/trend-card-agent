@@ -2,7 +2,8 @@
 
 사용법  python3 blotato_post.py --run 04_자료/run_<시각> [--at "2026-10-17 19:00"]
   --at 을 빼면 다음 저녁 7시(한국 시각)로 예약한다.
-키: BLOTATO_API_KEY (.env 또는 Secrets). Blotato 유료 플랜에서 발급된다. 없으면 호출하지 않고 멈춘다.
+키: BLOTATO_API_KEY (.env 또는 Secrets). Blotato 유료 플랜에서 발급된다(무료 체험에는 API 가 없다).
+키가 없으면 FAKE 로 돈다: 보낼 요청을 그대로 만들어 06_예약.json 에 저장하고, Blotato 는 부르지 않는다(실제 게시 없음).
 흐름: ① 인스타 계정 ID 찾기 ② 카드 PNG 7장을 Blotato 저장소에 올리기(presigned upload) ③ 캐러셀 게시물 예약
 결과: run 폴더의 06_예약.json (예약 번호·예약 시각·이미지 주소)
 """
@@ -61,6 +62,34 @@ def upload(png: Path, key: str) -> str:
     return up["publicUrl"]
 
 
+def has_key() -> bool:
+    base = Path(__file__).parent
+    env = load_env(base / ".env" if (base / ".env").exists() else base.parent / ".env")
+    return bool(env.get("BLOTATO_API_KEY") or os.environ.get("BLOTATO_API_KEY"))
+
+
+def fake_schedule(run_dir: Path, when: dt.datetime) -> dict:
+    """키 없이 예약 단계를 흉내 낸다. 실제로 보낼 요청 본문을 만들어 저장만 한다."""
+    card = json.loads((run_dir / "04_카드문구.json").read_text(encoding="utf-8"))["card"]
+    pngs = [run_dir / "cards" / f"card-{i}.png" for i in range(1, 8)]
+    if not all(p.exists() for p in pngs):
+        raise RuntimeError("카드 PNG 7장이 없다. 카드 만들기를 먼저 한다.")
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=KST)
+    text = card.get("caption", "").strip() + "\n\n" + " ".join(card.get("hashtags", [])[:5])
+    body = {"post": {"accountId": "<인스타 계정 ID: GET /v2/users/me/accounts>",
+                     "content": {"text": text, "mediaUrls": [f"<{p.name} 업로드 뒤 publicUrl>" for p in pngs], "platform": "instagram"},
+                     "target": {"targetType": "instagram"}},
+            "scheduledTime": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+    out = {"mode": "FAKE", "note": "BLOTATO_API_KEY 가 없어 Blotato 를 부르지 않았다. 실제 게시 없음.",
+           "post_submission_id": "FAKE-" + dt.datetime.now(KST).strftime("%Y%m%d%H%M%S"),
+           "scheduled_kst": when.astimezone(KST).isoformat(timespec="minutes"),
+           "request": {"method": "POST", "url": API + "/posts", "body": body},
+           "requested_at": dt.datetime.now(KST).isoformat(timespec="minutes")}
+    (run_dir / "06_예약.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return out
+
+
 def schedule(run_dir: Path, when: dt.datetime, key: str | None = None) -> dict:
     key = key or api_key()
     card = json.loads((run_dir / "04_카드문구.json").read_text(encoding="utf-8"))["card"]
@@ -76,7 +105,7 @@ def schedule(run_dir: Path, when: dt.datetime, key: str | None = None) -> dict:
                      "target": {"targetType": "instagram"}},
             "scheduledTime": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
     res = _req("POST", "/posts", key, json=body)
-    out = {"post_submission_id": res.get("postSubmissionId", ""), "scheduled_kst": when.astimezone(KST).isoformat(timespec="minutes"),
+    out = {"mode": "REAL", "post_submission_id": res.get("postSubmissionId", ""), "scheduled_kst": when.astimezone(KST).isoformat(timespec="minutes"),
            "media_urls": urls, "requested_at": dt.datetime.now(KST).isoformat(timespec="minutes")}
     (run_dir / "06_예약.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     return out
@@ -89,10 +118,10 @@ def main() -> int:
     a = ap.parse_args()
     when = dt.datetime.strptime(a.at, "%Y-%m-%d %H:%M").replace(tzinfo=KST) if a.at else next_post_time()
     try:
-        r = schedule(Path(a.run), when)
+        r = schedule(Path(a.run), when) if has_key() else fake_schedule(Path(a.run), when)
     except RuntimeError as e:
         print("예약 실패:", e, file=sys.stderr); return 1
-    print(f"예약 완료: {r['scheduled_kst']} (번호 {r['post_submission_id']})")
+    print(f"예약{' (FAKE, 실제 게시 없음)' if r['mode'] == 'FAKE' else ''}: {r['scheduled_kst']} (번호 {r['post_submission_id']})")
     return 0
 
 
