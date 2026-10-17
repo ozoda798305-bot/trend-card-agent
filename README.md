@@ -34,8 +34,8 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 ## 출처
 - `naver_datalab.py`, `judge.py` 는 수업(임보람 교수) 제공 코드다. `.env` 읽기 함수를 함께 쓴다.
 
-## 매일 자동 실행과 예약
-- **매일 아침 8시(한국)**: GitHub Actions(`.github/workflows/daily_find.yml`)가 후보 찾기만 돌려 `daily/run_<시각>/` 에 올린다. 웹 앱은 이 최신 후보 표를 보여 준다. 저장소 Settings → Secrets and variables → Actions 에 `YOUTUBE_API_KEY`, `GEMINI_API_KEY` 가 있어야 한다.
+## 매주 자동 실행과 예약
+- **매주 월요일 아침 8시(한국)**: GitHub Actions(`.github/workflows/daily_find.yml`)가 후보 찾기만 돌려 `daily/run_<시각>/` 에 올린다. 웹 앱은 이 최신 후보 표를 보여 준다. 저장소 Settings → Secrets and variables → Actions 에 `YOUTUBE_API_KEY`, `GEMINI_API_KEY` 가 있어야 한다.
 - **고르기·카드·승인은 사람**이 웹 앱에서 한다.
 - **예약(④)**: 승인 체크 3개 뒤 「📅 예약」→ `blotato_post.py`. 게시 시각은 사람이 고르지 않고 **실행이 시작된 날 저녁 7시**로 자동으로 정한다(이미 지났으면 다음 날 7시). Blotato API 는 유료 플랜 전용이라 키가 없으면 **FAKE** 로 돈다: 보낼 요청(캡션·이미지 7장·게시 시각)을 `06_예약.json` 에 저장만 하고 Blotato 는 부르지 않는다. 키(`BLOTATO_API_KEY`)를 넣으면 같은 버튼이 실제 예약을 한다.
 - 실제 게시는 사람이 인스타 앱이나 Meta Business Suite 예약 기능으로 한다.
@@ -43,7 +43,7 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 ## 여러 사람이 쓸 때(사람별 맞춤)
 - Streamlit Secrets 에 `[auth]`(구글 로그인)를 넣으면 로그인한 사람마다 따로 돈다. 넣지 않으면 운영자 혼자(`DEMO_PASSWORD`).
 - 사람마다 따로: **이미 쓴 표현 목록·Today's Korean #번호·카드 배지 계정(@...)·하루 실행 횟수(5번)**.
-- 함께 쓰는 것: 아침 8시 후보 표(`daily/`). 표에서 그 사람이 이미 쓴 표현만 「이미 씀」으로 바뀌고 고를 수 없다.
+- 함께 쓰는 것: 월요일 아침 후보 표(`daily/`). 표에서 그 사람이 이미 쓴 표현만 「이미 씀」으로 바뀌고 고를 수 없다.
 - 저장: `users/<id>/used.json`, `users/<id>/profile.json`. id 는 이메일의 해시 12자리(이메일을 저장소에 쓰지 않는다).
 - 웹 서버 파일은 재시작 때 지워지므로 Secrets 의 `GITHUB_TOKEN`(이 저장소만, Contents 읽기·쓰기 fine-grained token)으로 GitHub 에 직접 기록한다.
 
@@ -53,6 +53,6 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 - 「Today's Korean #N」 = 그 사람이 이미 쓴 표현 개수 + 1. 디자인을 다시 만들어도 번호는 같다.
 
 ## 아침 알림(운영자만)
-- 아침 8시 실행이 끝나면 `daily_notify.py` 가 「🟨 오늘의 후보 <날짜>」 GitHub 이슈를 만들고, GitHub 가 저장소 주인(운영자)에게 이메일을 보낸다. 전날 알림은 자동으로 닫힌다.
+- 월요일 아침 실행이 끝나면 `daily_notify.py` 가 「🟨 이번 주 후보 <날짜>」 GitHub 이슈를 만들고, GitHub 가 저장소 주인(운영자)에게 이메일을 보낸다. 지난주 알림은 자동으로 닫힌다.
 - 알림에는 후보 표와 웹 앱 링크만 있다. 확인·승인은 카드 7장을 보고 웹 앱에서 한다.
 - 사람별 이메일 알림은 다음 단계(동의한 사람에게 Gmail 로 맞춤 후보 보내기).

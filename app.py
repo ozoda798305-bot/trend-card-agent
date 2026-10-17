@@ -3,7 +3,7 @@
 운영자는 API 키를 몰라도 버튼만 누른다. 키는 서버에만 있다(내 컴퓨터는 .env, 배포 서버는 Streamlit Secrets).
 여러 사람이 쓴다: Secrets 에 [auth](구글 로그인)가 있으면 로그인한 사람마다 이미 쓴 표현·#번호·배지 계정·하루 횟수를 따로 둔다.
 후보 표(아침 자동 실행)는 모두가 함께 보고, 카드는 사람마다 users/<id>/ 폴더에 따로 만든다.
-  ① 오늘의 후보 찾기(매일 아침 8시 GitHub Actions 가 자동으로 daily/ 에 만들어 둔다)
+  ① 오늘의 후보 찾기(매주 월요일 아침 8시 GitHub Actions 가 자동으로 daily/ 에 만들어 둔다)
   ② 표현 골라 카드 만들기  ③ 승인 → 내려받기 / 디자인 다시 만들기
   ④ Blotato 예약(키가 없으면 FAKE: 요청만 저장, 실제 게시는 사람이 직접)
 실행: streamlit run app.py
@@ -24,7 +24,7 @@ except AttributeError:
 BASE = Path(__file__).parent
 DATA = BASE / "04_자료"
 DEMO = BASE / "samples" / "run_demo"
-DAILY = BASE / "daily"  # 매일 아침 자동 실행 결과(GitHub Actions)
+DAILY = BASE / "daily"  # 매주 월요일 아침 자동 실행 결과(GitHub Actions)
 USAGE = DATA / "usage.json"
 DAILY_LIMIT = 5  # 한 사람의 하루 실행 횟수(후보 찾기 + 카드 만들기 + 디자인 다시). 우리 키의 무료 한도를 지킨다
 
@@ -173,7 +173,7 @@ if run_dir and (run_dir / "03_AI검수.json").exists():
         u = used.get(used_store.norm(c.get("clean") or c["expression"])) or used.get(used_store.norm(c["expression"]))
         if u:
             c["decision"], c["reason"] = "이미 씀", f"{u['date']} Today's Korean #{u['series_no']}에서 이미 씀"
-    st.caption(f"결과 폴더: {run_dir.name}" + (" (데모 예시)" if demo else " (아침 8시 자동 실행)" if run_dir.parent == DAILY else ""))
+    st.caption(f"결과 폴더: {run_dir.name}" + (" (데모 예시)" if demo else " (월요일 아침 8시 자동 실행)" if run_dir.parent == DAILY else ""))
     st.dataframe([{"표현": c.get("clean") or c["expression"], "유튜브 풀이 영상": c["explainer_videos"],
                    "조회수": f'{c["views_total"]:,}', "검증": c["verdict"], "AI 검수": c.get("decision", ""),
                    "이유": c.get("reason", "")} for c in items], use_container_width=True, hide_index=True)
