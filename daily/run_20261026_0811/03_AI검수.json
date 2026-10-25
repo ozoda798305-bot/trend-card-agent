@@ -1,0 +1,273 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "빙모 상",
+   "source": "구글 트렌드",
+   "evidence": "빙모 상 뜻",
+   "explainer_videos": 1,
+   "views_total": 396,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "부고 문자 속 빙모상 진짜 뜻 #빙모상 #빙부상 #빙모상뜻",
+     "url": "https://www.youtube.com/watch?v=H2YPfBDlP0g",
+     "description": "장인어른, 장모님이 돌아가셨을 때 쓰는 표현, 정확히 알고 계신가요? 빙모상은 장모님, 빙부상은 장인어른의 상을 높여 부르는 ...",
+     "views": 396
+    }
+   ],
+   "clean": "빙모상",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "장모님의 상사를 뜻하는 일반적인 관혼상제 단어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "페노메논",
+   "source": "구글 트렌드",
+   "evidence": "페노메논 뜻",
+   "explainer_videos": 2,
+   "views_total": 1498,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "페노메논 뜻 뭐길래? 박진영 국정감사·150억 예산 논란까지",
+     "url": "https://www.youtube.com/watch?v=9zqbtIJXwjo",
+     "description": "최근 관심을 모으고 있는 '페노메논', 무슨 뜻일까요? 페노메논(Phenomenon)은 영어로 '현상'이라는 뜻입니다. 그런데 최근 박진영 ...",
+     "views": 1487
+    },
+    {
+     "title": "페노메논 뜻 뭐길래? 박진영 국정감사·150억 예산 논란까지",
+     "url": "https://www.youtube.com/watch?v=GgxHEKZj-64",
+     "description": "최근 관심을 모으고 있는 '페노메논', 무슨 뜻일까요? 페노메논(Phenomenon)은 영어로 '현상'이라는 뜻입니다. 그런데 최근 박진영 ...",
+     "views": 11
+    }
+   ],
+   "clean": "페노메논",
+   "decision": "빼기",
+   "topic": "정치",
+   "reason": "국정감사 및 특정 인물의 예산 논란 등 정치·사건 이슈와 연관된 표현입니다."
+  },
+  {
+   "expression": "개천절",
+   "source": "구글 트렌드",
+   "evidence": "개천절 뜻",
+   "explainer_videos": 8,
+   "views_total": 16127,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "우리는 왜 개천절에 쉴까? 개천절의 역사적 의미 | 이중석 한국사",
+     "url": "https://www.youtube.com/watch?v=kEl3pLRwv7I",
+     "description": "이중석 선생님 맵핑 한능검 교재 구매하기 https://gouk.kr/Q5fGT8 왜 개천절은 10월 3일일까요? 우리는 언제부터 개천절을 공휴일로 ...",
+     "views": 4646
+    },
+    {
+     "title": "개천절, 무슨 날인지 정확히 아시나요?｜10월 3일의 진짜 의미",
+     "url": "https://www.youtube.com/watch?v=jZwk_N6T2jw",
+     "description": "10월 3일, 개천절. 많은 사람이 단군이 고조선을 세운 날로 기억하지만, '개천'은 글자 그대로 하늘이 열린다는 뜻을 담고 있습니다.",
+     "views": 3532
+    },
+    {
+     "title": "개천절 뜻과 유래｜왜 10월 3일을 ‘하늘이 열린 날’이라고 할까",
+     "url": "https://www.youtube.com/watch?v=Xxh2gXCY4qk",
+     "description": "개천절 뜻을 한자로 풀면 '하늘이 열린 것을 기념하는 날'입니다. 그런데 고조선 건국을 기념하는 날인데 왜 '건국절'이 아니라 '개천절' ...",
+     "views": 1982
+    }
+   ],
+   "clean": "개천절",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "한국의 법정 공휴일 명칭으로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "부캉 이",
+   "source": "구글 트렌드",
+   "evidence": "부캉 이 뜻",
+   "explainer_videos": 2,
+   "views_total": 8395,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "부캉이 상어, 전문가가 말한 &#39;최대 일주일&#39;은 무슨 뜻일까",
+     "url": "https://www.youtube.com/watch?v=9paIUtGyHQ0",
+     "description": "부캉이 상어 — 23일 오전에도 부캉이는 수로 입구 안쪽 90m쯤 차단막 근처를 맴돌았어요. 전문가들은 새 환경에 적응하는 데 최대 ...",
+     "views": 6668
+    },
+    {
+     "title": "상어 부캉이 뜻·위치·종 총정리, 부산 북항에 10만 명 몰린 이유",
+     "url": "https://www.youtube.com/watch?v=YuITeotqsOY",
+     "description": "부산 도심에 상어 한 마리가 나타나자 평소와 전혀 다른 풍경이 만들어졌습니다. 부산 북항 친수공원 인공수로에 나타난 약 3~3.5m ...",
+     "views": 1727
+    }
+   ],
+   "clean": "부캉이",
+   "decision": "사람 확인",
+   "topic": "사건사고",
+   "reason": "부산 북항에 상어가 출현한 뉴스 사건과 관련된 명칭이므로 검토가 필요합니다."
+  },
+  {
+   "expression": "먼 작귀",
+   "source": "구글 트렌드",
+   "evidence": "먼 작귀 뜻",
+   "explainer_videos": 2,
+   "views_total": 1762,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "먼닭기 (먼작귀라는 뜻)",
+     "url": "https://www.youtube.com/watch?v=KMDEVt4PaSs",
+     "description": "치이카와 #먼작귀.",
+     "views": 1619
+    },
+    {
+     "title": "먼작귀 뜻｜카니는 캐릭터가 아닙니다",
+     "url": "https://www.youtube.com/watch?v=HeF-vcZWeTw",
+     "description": "먼작귀 뜻부터 캐릭터·영화·굿즈까지 30초 정리! 먼작귀 = 뭔가 작고 귀여운 녀석, 치이카와의 한국 이름입니다. 카니는 헌책방 캐릭터 ...",
+     "views": 143
+    }
+   ],
+   "clean": "먼작귀",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "특정 캐릭터 및 일본 애니메이션 작품의 한국어 명칭으로 유행어가 아닙니다."
+  },
+  {
+   "expression": "티원",
+   "source": "구글 트렌드",
+   "evidence": "티원 뜻",
+   "explainer_videos": 1,
+   "views_total": 1480,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "티원 뜻? T1은 왜 이름이 ‘티원’일까?",
+     "url": "https://www.youtube.com/watch?v=vZoiYuOzet4",
+     "description": "페이커가 소속된 T1, 이름은 무슨 뜻일까요? 과거 SK텔레콤 T1에서 시작해 2019년 컴캐스트와의 합작을 거치며 글로벌 e스포츠 ...",
+     "views": 1480
+    }
+   ],
+   "clean": "티원",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "특정 e스포츠 구단의 고유 명칭입니다."
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻",
+   "explainer_videos": 1,
+   "views_total": 1491,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "요즘 다들 추는 &#39;L을 가져가&#39; 춤, 무슨 뜻일까? 🤔#shorts #l을가져가",
+     "url": "https://www.youtube.com/watch?v=ayGhY7jf7U8",
+     "description": "지하철에서도, 회사에서도, 미용실에서도 다들 이마에 L! L은 Loss(패배)의 L. 영어 'Take the L'은 \"졌으면 인정해\"라는 뜻이에요.",
+     "views": 1491
+    }
+   ],
+   "clean": "L을 가져가",
+   "decision": "통과",
+   "topic": "",
+   "reason": "'Take the L'에서 유래하여 최근 유행하는 댄스 챌린지 밈 표현입니다."
+  },
+  {
+   "expression": "치이 카와",
+   "source": "구글 트렌드",
+   "evidence": "치이 카와 뜻",
+   "explainer_videos": 1,
+   "views_total": 64527,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "치이카와 캐릭터들 이름 뜻",
+     "url": "https://www.youtube.com/watch?v=9EW2Orj7qxg",
+     "description": "본 영상은 오락적 흥미 제공을 목적으로 제작되었으며 영상의 내용을 각색하여 주관적인 해석과 설명을 더한 콘텐츠입니다. 채널 ...",
+     "views": 64527
+    }
+   ],
+   "clean": "치이카와",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "관련 설명 및 제목 근거가 부족하여 유행 표현 여부 확인이 필요합니다."
+  },
+  {
+   "expression": "줴줴 이야",
+   "source": "구글 트렌드",
+   "evidence": "줴줴 이야 뜻",
+   "explainer_videos": 10,
+   "views_total": 253291,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "진짜 무슨뜻이에요? ㅋㅋㅋ 아니 모르겠어요🙄 #줴줴이야",
+     "url": "https://www.youtube.com/watch?v=6o0d2wMtxQA",
+     "description": "",
+     "views": 115632
+    },
+    {
+     "title": "줴줴이야 뜻, 대체 무슨 말일까? 알고 보면 GG입니다",
+     "url": "https://www.youtube.com/watch?v=Lv6K54cdu8U",
+     "description": "요즘 유튜브나 게임 방송에서 자주 들리는 “아 줴줴이야~”. 무슨 뜻인지 궁금하셨나요? 알고 보면 게임 용어 GG에서 시작된 인터넷 밈 ...",
+     "views": 57671
+    },
+    {
+     "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+     "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4",
+     "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+     "views": 53439
+    }
+   ],
+   "clean": "줴줴이야",
+   "decision": "통과",
+   "topic": "",
+   "reason": "게임 용어 GG에서 시작되어 유행하는 인터넷 밈 표현입니다."
+  },
+  {
+   "expression": "하치 와 레",
+   "source": "구글 트렌드",
+   "evidence": "하치 와 레 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "하치와레",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 영상 및 설명 근거가 없어 유행 표현인지 확인하기 어렵습니다."
+  },
+  {
+   "expression": "토마토",
+   "source": "구글 트렌드",
+   "evidence": "토마토 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "토마토",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 정보에 영상 및 설명 근거가 없어 판단에 대한 검토가 필요합니다."
+  },
+  {
+   "expression": "한남",
+   "source": "구글 트렌드",
+   "evidence": "한남 뜻",
+   "explainer_videos": 1,
+   "views_total": 53439,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+     "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4",
+     "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+     "views": 53439
+    }
+   ],
+   "clean": "한남",
+   "decision": "빼기",
+   "topic": "욕설·비하·혐오 표현",
+   "reason": "특정 집단에 대한 비하 및 혐오 표현에 해당합니다."
+  }
+ ]
+}

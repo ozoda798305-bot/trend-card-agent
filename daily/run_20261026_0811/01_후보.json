@@ -1,0 +1,972 @@
+{
+ "log": [
+  "구글 트렌드 실시간 수집",
+  "유튜브 풀이 영상 82개 수집"
+ ],
+ "candidates": [
+  {
+   "expression": "빙모 상",
+   "source": "구글 트렌드",
+   "evidence": "빙모 상 뜻"
+  },
+  {
+   "expression": "페노메논",
+   "source": "구글 트렌드",
+   "evidence": "페노메논 뜻"
+  },
+  {
+   "expression": "개천절",
+   "source": "구글 트렌드",
+   "evidence": "개천절 뜻"
+  },
+  {
+   "expression": "부캉 이",
+   "source": "구글 트렌드",
+   "evidence": "부캉 이 뜻"
+  },
+  {
+   "expression": "먼 작귀",
+   "source": "구글 트렌드",
+   "evidence": "먼 작귀 뜻"
+  },
+  {
+   "expression": "티원",
+   "source": "구글 트렌드",
+   "evidence": "티원 뜻"
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻"
+  },
+  {
+   "expression": "치이 카와",
+   "source": "구글 트렌드",
+   "evidence": "치이 카와 뜻"
+  },
+  {
+   "expression": "줴줴 이야",
+   "source": "구글 트렌드",
+   "evidence": "줴줴 이야 뜻"
+  },
+  {
+   "expression": "하치 와 레",
+   "source": "구글 트렌드",
+   "evidence": "하치 와 레 뜻"
+  },
+  {
+   "expression": "토마토",
+   "source": "구글 트렌드",
+   "evidence": "토마토 뜻"
+  },
+  {
+   "expression": "한남",
+   "source": "구글 트렌드",
+   "evidence": "한남 뜻"
+  }
+ ],
+ "explainer_videos": [
+  {
+   "video_id": "6xiqwa1xPqg",
+   "url": "https://www.youtube.com/watch?v=6xiqwa1xPqg",
+   "title": "&#39;밤티&#39; 뜻 찾는 데 16주…신조어, 세대 건너는 속도 제각각｜지금 이 쇼츠",
+   "description": "'촌스럽다'는 뜻의 신조어 '밤티'가 20대에서 40대로 번지는 데 16주가 걸린 것으로 나타났습니다. 네이버 검색어 트렌드로 연령별 ...",
+   "channel": "JTBC News",
+   "published": "2026-10-08",
+   "views": 15483,
+   "seconds": 64,
+   "short": true
+  },
+  {
+   "video_id": "eCyNFSXufH4",
+   "url": "https://www.youtube.com/watch?v=eCyNFSXufH4",
+   "title": "한글날 100돌…&#39;느좋&#39;·&#39;늙크크&#39; 쏟아지는 신조어, 멀어지는 소통 [뉴스9]",
+   "description": "지금 보이는 단어들이 어떤 뜻인지 알고 계신가요? 요즘 젊은 세대들이 자주 쓰는 #신조어 인데, 유행에 밝지 않은 기성 세대들은 ...",
+   "channel": "뉴스TVCHOSUN",
+   "published": "2026-10-09",
+   "views": 7149,
+   "seconds": 122,
+   "short": true
+  },
+  {
+   "video_id": "VXl-wSc0LTs",
+   "url": "https://www.youtube.com/watch?v=VXl-wSc0LTs",
+   "title": "MZ세대가 쓰는 신조어 TOP 10 갓생·알잘딱깔센·추구미·중꺾마 뜻 총정리 #MZ세대 #MZ신조어 #신조어 #요즘말 #요즘신조어 #신조어모음 #유행어 #줄임말 #SNS신조어",
+   "description": "요즘 대화나 SNS에서 자주 보이는 MZ세대 신조어, 얼마나 알고 계신가요? 처음 보면 외계어처럼 느껴지지만 알고 보면 의외로 간단한 ...",
+   "channel": "아름다운인생",
+   "published": "2026-10-05",
+   "views": 27545,
+   "seconds": 6,
+   "short": true
+  },
+  {
+   "video_id": "zSAwXWsPUxo",
+   "url": "https://www.youtube.com/watch?v=zSAwXWsPUxo",
+   "title": "요즘 신조어 뜻 총정리｜밤티·야르·샤갈·책없쾌·L을 가져가 무슨 뜻일까",
+   "description": "밤티, 중티, 야르, 샤갈, 책없쾌, 오살힘, L을 가져가 뜻이 궁금하다면? 요즘 신조어와 SNS 유행어의 뜻과 유래, 실제 대화 예시, 상황별 ...",
+   "channel": "노랗티비",
+   "published": "2026-10-21",
+   "views": 1143,
+   "seconds": 78,
+   "short": true
+  },
+  {
+   "video_id": "N82DPai4MrE",
+   "url": "https://www.youtube.com/watch?v=N82DPai4MrE",
+   "title": "요즘 신조어를 본 서울대 국문과 교수의 의외의 반응",
+   "description": "서울대 국문과 교수는 \"늙크크, 야르\"를 어떻게 볼까? #신조어 #한글날 #야르.",
+   "channel": "이강민의 잡지사",
+   "published": "2026-10-10",
+   "views": 17739,
+   "seconds": 57,
+   "short": true
+  },
+  {
+   "video_id": "-h1nDidPpSU",
+   "url": "https://www.youtube.com/watch?v=-h1nDidPpSU",
+   "title": "‘밤티’는 밤에 티타임?…신조어의 세계 / 채널A / 뉴스A",
+   "description": "'밤티'는 밤에 티타임?…신조어의 세계 [앵커] 낯설게 느껴지면 늙크크라는데, 솔직히 몇개는 무슨 뜻인지 잘 모르겠습니다. 10대에겐 ...",
+   "channel": "채널A News",
+   "published": "2026-10-08",
+   "views": 8320,
+   "seconds": 121,
+   "short": true
+  },
+  {
+   "video_id": "M57mWdmcNkE",
+   "url": "https://www.youtube.com/watch?v=M57mWdmcNkE",
+   "title": "요즘 애들 말, 몇 개나 알아듣겠어요? 신조어 뜻 한눈에",
+   "description": "분명 한국말인데 대화가 하나도 안 들릴 때가 있습니다. 게임에서 시작된 'GG', 영어권 인터넷 표현에서 넘어온 'Take the L', 밥을 ...",
+   "channel": "삶의 정돈",
+   "published": "2026-10-20",
+   "views": 112,
+   "seconds": 6,
+   "short": true
+  },
+  {
+   "video_id": "wdMGvvac0Og",
+   "url": "https://www.youtube.com/watch?v=wdMGvvac0Og",
+   "title": "요즘 10대들이 쓰는 신조어 맞히기",
+   "description": "10월 9일, 한글날 제정 100주년! 국장님들이 도전하는 요즘 신조어 퀴즈! 과연 국장님들은 신조어를 얼마나 알고 계실까요?",
+   "channel": "경상북도교육청 맛쿨멋쿨TV",
+   "published": "2026-10-08",
+   "views": 2187,
+   "seconds": 46,
+   "short": true
+  },
+  {
+   "video_id": "rvzIr6YErLM",
+   "url": "https://www.youtube.com/watch?v=rvzIr6YErLM",
+   "title": "요즘 신조어, 이 말 무슨 뜻인지 아세요?",
+   "description": "자주 들어봤지만 정확한 뜻은 헷갈리는 요즘 신조어들! 갑분싸, 내돈내산, 꾸안꾸, TMI부터 현타, 문찐, 자낳괴, 웃안웃, 좋댓구알, 내로 ...",
+   "channel": "마음 한줄",
+   "published": "2026-09-26",
+   "views": 3399,
+   "seconds": 6,
+   "short": true
+  },
+  {
+   "video_id": "O6hcIetUgEo",
+   "url": "https://www.youtube.com/watch?v=O6hcIetUgEo",
+   "title": "젠지들이 쓰는 신조어 &#39;skibidi&#39; 무슨 뜻일까? #shorts",
+   "description": "젠지 #GenZ #slang #슬랭 #신조어 #영어 #영어공부 #영어단어 #영어표현 #영어회화 #유용한영어표현 #원어민영어 #원어민회화 ...",
+   "channel": " 부산영어방송 Busan English Broadcasting",
+   "published": "2026-10-14",
+   "views": 33878,
+   "seconds": 12,
+   "short": true
+  },
+  {
+   "video_id": "7znxAMLN00E",
+   "url": "https://www.youtube.com/watch?v=7znxAMLN00E",
+   "title": "&#39;부라는 게 숨긴다고 숨겨지는 것도 아니고&#39; 무슨 뜻인지 알아? #요즘말 #밈",
+   "description": "부라는 게 숨긴다고 숨겨지는 것도 아니고 — 소소한 물건이나 경험을 과장되게 부(富)로 포장해 자랑할 때 쓰는 말. 작은 것을 대단한 ...",
+   "channel": "보통의 지식",
+   "published": "2026-10-14",
+   "views": 956,
+   "seconds": 17,
+   "short": true
+  },
+  {
+   "video_id": "ofepmaO0ceM",
+   "url": "https://www.youtube.com/watch?v=ofepmaO0ceM",
+   "title": "요즘 아이들이 쓰는 신조어 TOP5!",
+   "description": "요즘 아이들이 쓰는 신조어 TOP5를 정리했습니다! 5위부터 1위까지 — 뜻과 예문으로 쉽게 알려드려요. #신조어 #유행어 #천년사랑 ...",
+   "channel": "천년사랑",
+   "published": "2026-10-10",
+   "views": 30,
+   "seconds": 59,
+   "short": true
+  },
+  {
+   "video_id": "7C06UfqMstk",
+   "url": "https://www.youtube.com/watch?v=7C06UfqMstk",
+   "title": "요즘 유행하는 감다뒤 진짜 뜻 #감다뒤 #감다살 #신조어",
+   "description": "요즘 '감다뒤' 소리 듣고 당황하셨나요? '감다뒤'는 감이 다 뒤졌다, '감다살'은 감이 다 살았다는 신조어예요! 뷰티도 무작정 유행만 쫓 ...",
+   "channel": "릴리프 앤 르네브",
+   "published": "2026-10-24",
+   "views": 1043,
+   "seconds": 25,
+   "short": true
+  },
+  {
+   "video_id": "rE3FnchHgx8",
+   "url": "https://www.youtube.com/watch?v=rE3FnchHgx8",
+   "title": "니들끼리만 웃지 말고 아줌마도 알려줘 😂 | 신조어 강의 2탄",
+   "description": "혜린이는 종일 엄마한테 “늙크크”라고 놀리면서 웃어. 한 번 해도 웃기고, 두 번 해도 웃기고. 나는 계속 늙고 얘는 계속 신나. 근데 ...",
+   "channel": "쿨한나 육아실험실",
+   "published": "2026-10-25",
+   "views": 1924,
+   "seconds": 69,
+   "short": true
+  },
+  {
+   "video_id": "U6-oOIDZM24",
+   "url": "https://www.youtube.com/watch?v=U6-oOIDZM24",
+   "title": "요즘 신조어 늙크크 밤티 뜻 #신조어 #늙크크 #밤티",
+   "description": "조카 카톡 보고 당황하셨나요? 늙크크, 밤티 뜻 모르면 대화에 끼기 힘듭니다! 요즘 유행하는 신조어 대화법, 영상으로 10초 만에 ...",
+   "channel": "사무장의 뒷얘기",
+   "published": "2026-10-09",
+   "views": 1320,
+   "seconds": 23,
+   "short": true
+  },
+  {
+   "video_id": "4lOTXTH6pRo",
+   "url": "https://www.youtube.com/watch?v=4lOTXTH6pRo",
+   "title": "한국에서 모르면 곤란한 외래어·신조어 #외래어 #신조어 #요즘말 #유행어 #우리말 #상식 #생활상식 #어휘 #어휘력 #말뜻 #중년상식 #뉴스상식 #생활정보 #쇼츠 #shorts",
+   "description": "제목 한국에서 모르면 곤란한 외래어·신조어 16가지｜요즘 자주 듣는 말 총정리 설명 갓생, 워라밸, 치팅데이, 메타버스, 워케이션, ...",
+   "channel": "내 새끼에게 들려주는 이야기",
+   "published": "2026-10-07",
+   "views": 56858,
+   "seconds": 6,
+   "short": true
+  },
+  {
+   "video_id": "Tk6HFluzhro",
+   "url": "https://www.youtube.com/watch?v=Tk6HFluzhro",
+   "title": "2026 신조어퀴즈 50",
+   "description": "중지정#난리자베스#완너벌#M비스찬#할렐야루#감다살#감다뒤#기대컨# 동결건조#샤갈#아자스#멘고멘고#~야호#가슴에 국밥 ...",
+   "channel": "한글어휘",
+   "published": "2026-10-14",
+   "views": 1868,
+   "seconds": 993,
+   "short": false
+  },
+  {
+   "video_id": "FV-BZm4phC4",
+   "url": "https://www.youtube.com/watch?v=FV-BZm4phC4",
+   "title": "신조어로 애정 표현? 뜻이 왜 그쪽이야ㅋㅋ",
+   "description": "",
+   "channel": "웃음포착",
+   "published": "2026-10-06",
+   "views": 38348,
+   "seconds": 29,
+   "short": true
+  },
+  {
+   "video_id": "JUYX7MnMmFs",
+   "url": "https://www.youtube.com/watch?v=JUYX7MnMmFs",
+   "title": "‘육시랄’의 섬뜩한 뜻, ‘꺼드럭대다’가 신조어가 아니라고? 😱 우리말의 비밀 10가지",
+   "description": "우리가 무심코 사용하는 말에 이런 비밀이 숨어 있었다고? “육시랄”, “염병할”, “학을 떼다”… 평소 아무렇지 않게 사용하던 말들에 생각 ...",
+   "channel": "HAEPBBI_LAB",
+   "published": "2026-10-08",
+   "views": 30,
+   "seconds": 113,
+   "short": true
+  },
+  {
+   "video_id": "jZ40ZDxQMZg",
+   "url": "https://www.youtube.com/watch?v=jZ40ZDxQMZg",
+   "title": "친구들은 다 아는데 나만 뜻 몰랐던 인터넷 단어 20개 😳 #인터넷용어 #신조어 #GOAT",
+   "description": "GOAT가 염소 아니었어?” SNS나 댓글 보다 보면 분명 한글인데 무슨 뜻인지 모르는 말들이 있죠. GOAT = 역대 최고 폼 ...",
+   "channel": "이슈인걸",
+   "published": "2026-10-09",
+   "views": 1879,
+   "seconds": 10,
+   "short": true
+  },
+  {
+   "video_id": "s6C2DCC0wnY",
+   "url": "https://www.youtube.com/watch?v=s6C2DCC0wnY",
+   "title": "&#39;밤티&#39; 뜻 찾는 데 16주…신조어, 세대 건너는 속도 제각각 #JTBC #Shorts",
+   "description": "지금, 이슈의 현장을 실시간으로! ☞JTBC 모바일라이브 시청하기 https://www.youtube.com/@jtbc_news/streams ☞JTBC유튜브 ...",
+   "channel": "JTBC News",
+   "published": "2026-10-08",
+   "views": 11712,
+   "seconds": 50,
+   "short": true
+  },
+  {
+   "video_id": "RcBPTK7jJQA",
+   "url": "https://www.youtube.com/watch?v=RcBPTK7jJQA",
+   "title": "알잘딱깔센·갓생·오운완 뜻 맞히기! 요즘 말 신조어 30문제 | 젤리오 퀴즈",
+   "description": "요즘 친구들이 자주 쓰는 말, 얼마나 알고 있나요? 젤리오와 함께 알잘딱깔센, 갓생, 킹받다, 꾸안꾸, 오운완, 무물, 최애 등 재미있는 ...",
+   "channel": "젤리오 퀴즈",
+   "published": "2026-10-24",
+   "views": 18,
+   "seconds": 594,
+   "short": false
+  },
+  {
+   "video_id": "jrlYomDEtQw",
+   "url": "https://www.youtube.com/watch?v=jrlYomDEtQw",
+   "title": "요즘 자주 듣는데 뜻은 모르는 신조어 15가지 #신조어 #생활상식",
+   "description": "알아두면 대화가 쉬워지는 자주 쓰는 신조어 15가지! 영상으로 보신 요즘 신조어, 본문에서 한 번 더 정리해 드립니다. 뜻을 알아 두면 ...",
+   "channel": "효도하는꿀정보",
+   "published": "2026-10-03",
+   "views": 233,
+   "seconds": 11,
+   "short": true
+  },
+  {
+   "video_id": "oa-KM7Y8wvg",
+   "url": "https://www.youtube.com/watch?v=oa-KM7Y8wvg",
+   "title": "외과의사에게 ‘밤티·영크크’를 아는지 물어봤습니다 - 요즘 신조어 테스트",
+   "description": "'외과의사'가 세상을 어떻게 바라보는지, '외과(外科)'라는 영역을 어떻게 해석하는지 궁금하다면? ▶️ \"외과의사의 바깥이야기\" ...",
+   "channel": "외과의사의 바깥이야기",
+   "published": "2026-10-07",
+   "views": 40,
+   "seconds": 106,
+   "short": true
+  },
+  {
+   "video_id": "8sGlrwrR79Q",
+   "url": "https://www.youtube.com/watch?v=8sGlrwrR79Q",
+   "title": "요즘 신조어 다 틀리는 송강 너무 귀여워 ㅋㅋㅋ #송강 #살롱드립 #신조어",
+   "description": "살롱드립에서 배우 송강이 당황한 신조어 퀴즈 현장을 공개합니다. 요즘 유행하는 단어들을 마주한 송강의 솔직하고 리얼한 반응을 ...",
+   "channel": "도파민도둑",
+   "published": "2026-10-06",
+   "views": 21596,
+   "seconds": 21,
+   "short": true
+  },
+  {
+   "video_id": "-jRIwhniFYI",
+   "url": "https://www.youtube.com/watch?v=-jRIwhniFYI",
+   "title": "1탄 - 안국진 선임연구위원님┃MZ 용어, 어디까지 알고 있나요?┃박사님께 신조어를 물어보았다",
+   "description": "MZ 용어, 어디까지 알고 있나요? 이건 알지~ 싶었던 단어부터 처음 들어보는 단어까지! 수원시정연구원 박사님에게 물어봤습니다.",
+   "channel": "수원시정연구원",
+   "published": "2026-10-08",
+   "views": 1183,
+   "seconds": 37,
+   "short": true
+  },
+  {
+   "video_id": "aZjAOoaaQIY",
+   "url": "https://www.youtube.com/watch?v=aZjAOoaaQIY",
+   "title": "MZ용어 &#39;#&#39;은 무엇일까?",
+   "description": "여러분은 #을 뭐라고 읽으세요?",
+   "channel": "숏클립스",
+   "published": "2026-10-13",
+   "views": 1377,
+   "seconds": 104,
+   "short": true
+  },
+  {
+   "video_id": "UvBfcFsyeFI",
+   "url": "https://www.youtube.com/watch?v=UvBfcFsyeFI",
+   "title": "[짬짬이] MZ 신조어 퀴즈",
+   "description": "https://jjamjjami.com/slang/?utm_source=youtube&utm_medium=video&utm_campaign=game-slang jjamjjami.com 들어가서 아래 ...",
+   "channel": "잘살림",
+   "published": "2026-10-21",
+   "views": 9,
+   "seconds": 17,
+   "short": true
+  },
+  {
+   "video_id": "zKGK7nTOUaQ",
+   "url": "https://www.youtube.com/watch?v=zKGK7nTOUaQ",
+   "title": "킹받네 무슨 뜻? 요즘 신조어 사전 #Shorts",
+   "description": "킹받네, 느좋, 갓생… 뜻은 알겠는데 언제 쓰는지 헷갈릴 때. 뜻 · 쓰는 상황 · 예문 · 비슷한 말까지 한 번에. ▷ 애매해 https://emehe.kr ...",
+   "channel": "에버링크 랩스",
+   "published": "2026-10-11",
+   "views": 147,
+   "seconds": 13,
+   "short": true
+  },
+  {
+   "video_id": "nXVzlqL6bTk",
+   "url": "https://www.youtube.com/watch?v=nXVzlqL6bTk",
+   "title": "#MZ가뭐야 #MZM뮤직 #MZMUSIC #MZ용어 #신조어 #유행어 #인터넷밈 #갓생 #오운완 #꾸안꾸 #느좋 #점메추 #저메추 #알잘딱깔센 #폼미쳤다 #감다살 #군싹 #킹받다",
+   "description": "요즘 말이 너무 어려워서 아예 노래로 만들어봤습니다! MZ가 뭐야? / What Does MZ Even Mean? 노래 속에 요즘 자주 보이는 ...",
+   "channel": "MZM뮤직",
+   "published": "2026-09-27",
+   "views": 25,
+   "seconds": 211,
+   "short": false
+  },
+  {
+   "video_id": "U_q4PUSalnA",
+   "url": "https://www.youtube.com/watch?v=U_q4PUSalnA",
+   "title": "이 노래 가사 80% 알아들으면 MZ 상위 1% 인정 (신조어 78개 융단폭격 노동요), 도파민 폭발 K-POP",
+   "description": "MZ신조어 #신조어모음 #유행어 #밈 #밈모음 #도파민 #도파민중독 #도파민디톡스 #노동요 #노동요추천 #수노AI #SunoAI #AI노래 ...",
+   "channel": "루아 LUA",
+   "published": "2026-09-27",
+   "views": 90,
+   "seconds": 85,
+   "short": true
+  },
+  {
+   "video_id": "X9UmkTEQdAM",
+   "url": "https://www.youtube.com/watch?v=X9UmkTEQdAM",
+   "title": "신조어 몇 개 아세요? 에겐녀 테토녀 골태기",
+   "description": "3문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-02",
+   "views": 604,
+   "seconds": 36,
+   "short": true
+  },
+  {
+   "video_id": "0PVdZ-918TA",
+   "url": "https://www.youtube.com/watch?v=0PVdZ-918TA",
+   "title": "원장님은 2026년 최신 신조어를 얼마나 알까? #shorts",
+   "description": "요즘 신조어, 얼마나 알고 계신가요?   2026년 최신 신조어를 37년 경력 성형외과 전문의에게 직접 물어봤습니다! 처음 듣는 낯선 ...",
+   "channel": "솔직한 의사 생활",
+   "published": "2026-10-12",
+   "views": 1160,
+   "seconds": 85,
+   "short": true
+  },
+  {
+   "video_id": "OE4zFJL-AvM",
+   "url": "https://www.youtube.com/watch?v=OE4zFJL-AvM",
+   "title": "MZ 용어 듣자마자 극대노한 우영(늙크크 테스트)",
+   "description": "kpop #idol #아이돌.",
+   "channel": "잼컷 jamcut",
+   "published": "2026-10-13",
+   "views": 30417,
+   "seconds": 34,
+   "short": true
+  },
+  {
+   "video_id": "guojO_60isA",
+   "url": "https://www.youtube.com/watch?v=guojO_60isA",
+   "title": "화가 샤갈 말고 진짜 숨은 뜻 #신조어 #샤갈 #유행어",
+   "description": "\"너 진짜 샤갈이다\"가 그림 잘 그린다는 칭찬이 아니라고?! 욕설과 비속어를 귀엽게 순화한 요즘 신조어 '샤갈'의 진짜 뜻과 유쾌한 ...",
+   "channel": "Dragonstone",
+   "published": "2026-10-16",
+   "views": 68,
+   "seconds": 28,
+   "short": true
+  },
+  {
+   "video_id": "G3M5slpFWI4",
+   "url": "https://www.youtube.com/watch?v=G3M5slpFWI4",
+   "title": "&#39;God&#39;과 &#39;인생&#39;의 뜻  #갓생을응원합니다 #갓생 #모범생 #인생 #신조어",
+   "description": "신을 의미하는 'God'과 인생을 뜻하는 '생'의 합성어로 부지런하고 타의 모범이 되는 삶을 뜻하는 신조어 #갓생 #MZ세대 #칭찬 #격려 ...",
+   "channel": "남명(南溟)채널 고양특례시 ",
+   "published": "2026-10-22",
+   "views": 1005,
+   "seconds": 10,
+   "short": true
+  },
+  {
+   "video_id": "x4M5NAF6-Sk",
+   "url": "https://www.youtube.com/watch?v=x4M5NAF6-Sk",
+   "title": "이게 신조어 뜻이라구? ???:겠냐에요😜 [개국공신 하이라이트] | 쵸잉 | 씨미 #vtuber",
+   "description": "씨미에서 활발히 버추얼 스트리머로 활동중인 쵸잉 님의 저스트챗 콘텐츠 하이라이트! 버추얼 콘텐츠를 씨미에서 확인해보세요!",
+   "channel": "오! 씨미",
+   "published": "2026-10-10",
+   "views": 1617,
+   "seconds": 31,
+   "short": true
+  },
+  {
+   "video_id": "2U6LyoyJnqY",
+   "url": "https://www.youtube.com/watch?v=2U6LyoyJnqY",
+   "title": "신조어 몇 개 아세요? 하닉고시 셔세권 책없쾌",
+   "description": "3문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-04",
+   "views": 115,
+   "seconds": 36,
+   "short": true
+  },
+  {
+   "video_id": "8HA-HqUYYgo",
+   "url": "https://www.youtube.com/watch?v=8HA-HqUYYgo",
+   "title": "요즘 기내 방송, 무슨 말인지 알아들으면 MZ",
+   "description": "오늘 기내 안전 안내는 영어와 «Z세대 말» 두 가지로 한다는 승무원. «바이브 체크», «주인공 에너지», «영웅 놀이할 때 아님» 같은 ...",
+   "channel": "ZynBrief ",
+   "published": "2026-10-05",
+   "views": 7775,
+   "seconds": 54,
+   "short": true
+  },
+  {
+   "video_id": "065AVhs7inA",
+   "url": "https://www.youtube.com/watch?v=065AVhs7inA",
+   "title": "신조어 몇 개 아세요? 맛꾸 동엽이 엠비스찬 밤티 느좋",
+   "description": "5문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-09",
+   "views": 1110,
+   "seconds": 55,
+   "short": true
+  },
+  {
+   "video_id": "b-rnpUQEQfM",
+   "url": "https://www.youtube.com/watch?v=b-rnpUQEQfM",
+   "title": "신조어 몇 개 아세요? 업토버 야차룰 얼죽신",
+   "description": "3문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-01",
+   "views": 945,
+   "seconds": 36,
+   "short": true
+  },
+  {
+   "video_id": "SCOLoFLSIiI",
+   "url": "https://www.youtube.com/watch?v=SCOLoFLSIiI",
+   "title": "MZ 신입사원 당일 퇴사 레전드",
+   "description": "",
+   "channel": "참새입",
+   "published": "2026-09-29",
+   "views": 79351,
+   "seconds": 31,
+   "short": true
+  },
+  {
+   "video_id": "fO7JQYRCblk",
+   "url": "https://www.youtube.com/watch?v=fO7JQYRCblk",
+   "title": "신조어 몇 개 아세요? 군싹 젠지스테어 기대컨",
+   "description": "3문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-09-30",
+   "views": 265,
+   "seconds": 36,
+   "short": true
+  },
+  {
+   "video_id": "k1SCLTeSBYM",
+   "url": "https://www.youtube.com/watch?v=k1SCLTeSBYM",
+   "title": "오운완 뜻과 유래, 운동 인증은 어떻게 유행이 됐을까 #Shorts",
+   "description": "오운완은 '오늘 운동 완료'의 줄임말로, 운동 후 #오운완 태그를 달아 인증하는 SNS 문화입니다. 어원, 확인된 가장 이른 보도, 헬스장 ...",
+   "channel": "밈잘알",
+   "published": "2026-10-18",
+   "views": 1039,
+   "seconds": 48,
+   "short": true
+  },
+  {
+   "video_id": "Q7MsNyBEzeE",
+   "url": "https://www.youtube.com/watch?v=Q7MsNyBEzeE",
+   "title": "10월 3주차 신조어 14개, 몇 개 아세요? 에겐남 감다뒤 위쑤시개 조방원 | 2026 신조어 테스트",
+   "description": "12문제로 내 신조어 점수 확인: ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-18",
+   "views": 19,
+   "seconds": 166,
+   "short": true
+  },
+  {
+   "video_id": "tjbS3qq0LGQ",
+   "url": "https://www.youtube.com/watch?v=tjbS3qq0LGQ",
+   "title": "신조어 몇 개 아세요? 어그로 뽀시래기 분좋카 무물 먹방",
+   "description": "요즘 신조어 5개, 몇 개 아세요? 어그로: 관심과 분란을 조장함 뽀시래기: 작고 앙증맞은 존재 분좋카: 분위기 좋은 카페 무물: 무엇이든 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-22",
+   "views": 962,
+   "seconds": 10,
+   "short": true
+  },
+  {
+   "video_id": "59hu0DK63zQ",
+   "url": "https://www.youtube.com/watch?v=59hu0DK63zQ",
+   "title": "신조어 몇 개 아세요? 붕세권 긁혔다 테토에겐 젬민이 테무인간",
+   "description": "요즘 신조어 5개, 몇 개 아세요? 붕세권: 붕어빵 가게가 가까이 있는 주거 지역 긁혔다: 상대의 말에 자존심이 상하거나 기분이 나빠짐 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-19",
+   "views": 1079,
+   "seconds": 10,
+   "short": true
+  },
+  {
+   "video_id": "MpEkzr0fiHw",
+   "url": "https://www.youtube.com/watch?v=MpEkzr0fiHw",
+   "title": "요즘 신조어 줄임말 유래 듣고 쿠빈이 경악한 이유",
+   "description": "",
+   "channel": "우겡",
+   "published": "2026-10-03",
+   "views": 1171,
+   "seconds": 33,
+   "short": true
+  },
+  {
+   "video_id": "JpjoiBDSx8w",
+   "url": "https://www.youtube.com/watch?v=JpjoiBDSx8w",
+   "title": "#성형외과 원장님이 푸는 2026 #신조어 퀴즈📝",
+   "description": "성형외과 원장님이 푸는 2026 신조어 퀴즈   공부는 누구보다 잘하셨을 텐데… 신조어 실력은..... 원장님은 과연 몇 개나 맞히셨을까요 ...",
+   "channel": "닥터 타임머신(申)[뷰리프]",
+   "published": "2026-10-17",
+   "views": 1131,
+   "seconds": 143,
+   "short": true
+  },
+  {
+   "video_id": "IA0_XKkPdg8",
+   "url": "https://www.youtube.com/watch?v=IA0_XKkPdg8",
+   "title": "딸 앞에서 19금 오답 낸 신동엽, 애빼시·자만추 대참사ㅋㅋ #SNL코리아 #신동엽 #주말콩트",
+   "description": "딸 주현영이 신조어 카드를 들고 아빠 신동엽이 맞히는 MZ 퀴즈쇼. 갑통알은 \"알통?\", 애빼시는 \"애무 빼면 시체?\" \"엄마랑 아빠랑 ...",
+   "channel": "주말콩트",
+   "published": "2026-10-15",
+   "views": 1506,
+   "seconds": 54,
+   "short": true
+  },
+  {
+   "video_id": "BJ0_Jaeqges",
+   "url": "https://www.youtube.com/watch?v=BJ0_Jaeqges",
+   "title": "신조어 이 정도는 알아야 인싸 😉✨ I 메이딘의 멤망진창 신조어 퀴즈 대결",
+   "description": "More About \"MADEIN\" https://www.instagram.com/we.MADEIN.u https://www.tiktok.com/@MADEIN_u https://x.com/MADEIN_u ...",
+   "channel": "MADEIN",
+   "published": "2026-10-14",
+   "views": 16252,
+   "seconds": 1003,
+   "short": false
+  },
+  {
+   "video_id": "CaX8jYaMcQQ",
+   "url": "https://www.youtube.com/watch?v=CaX8jYaMcQQ",
+   "title": "줄임말 퀴즈에 터진 웃음 바다 | 신조어 뜻을 맞추는 유쾌한 현장 #shorts",
+   "description": "줄임말 퀴즈에 터진 웃음 바다 (신조어 뜻을 맞추는 유쾌한 현장)에 관한 실제 인터뷰 대화를 원본 음성으로 확인합니다. Source: GQ ...",
+   "channel": "셀럽 룩 탐정",
+   "published": "2026-10-15",
+   "views": 1114,
+   "seconds": 24,
+   "short": true
+  },
+  {
+   "video_id": "oIoxL8mmHqE",
+   "url": "https://www.youtube.com/watch?v=oIoxL8mmHqE",
+   "title": "신조어 퀴즈에서 신동엽이 외친 충격적인 오답",
+   "description": "",
+   "channel": "유머가최고",
+   "published": "2026-09-30",
+   "views": 9125,
+   "seconds": 25,
+   "short": true
+  },
+  {
+   "video_id": "WTtHV993LuA",
+   "url": "https://www.youtube.com/watch?v=WTtHV993LuA",
+   "title": "신조어 몇 개 아세요? 딸깍 전업자녀 토마토코어 테토남 행집욕부",
+   "description": "5문제만 풀어보세요. 다 맞히면 상위권입니다. 몇 개 맞혔는지 댓글로 알려주세요! 구독하면 매일 새 문제가 옵니다. 12문제 전체 ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-17",
+   "views": 1077,
+   "seconds": 55,
+   "short": true
+  },
+  {
+   "video_id": "7ZoVJnf_0xQ",
+   "url": "https://www.youtube.com/watch?v=7ZoVJnf_0xQ",
+   "title": "10월 2주차 신조어 20개, 몇 개 아세요? 진지스칸 램마겟돈 떡지순례 늙크크 | 2026 신조어 테스트",
+   "description": "12문제로 내 신조어 점수 확인: ...",
+   "channel": "나마네 운세",
+   "published": "2026-10-14",
+   "views": 247,
+   "seconds": 232,
+   "short": false
+  },
+  {
+   "video_id": "rxCBm4fB7pE",
+   "url": "https://www.youtube.com/watch?v=rxCBm4fB7pE",
+   "title": "요즘 밈·신조어 퀴즈 1탄! 10개 다 맞히면 인싸 인정 📱 #Shorts",
+   "description": "짤 보고 이름, 신조어 보고 뜻 맞히기 1탄! 3초 안에 정답을 외쳐 보세요 ⏱️ 트랄랄레로·학씨·Chill Guy 같은 짤부터 테토녀·감다살 ...",
+   "channel": "아하퀴즈",
+   "published": "2026-10-25",
+   "views": 1191,
+   "seconds": 40,
+   "short": true
+  },
+  {
+   "video_id": "COKFZyiNtbk",
+   "url": "https://www.youtube.com/watch?v=COKFZyiNtbk",
+   "title": "[세대공감 기록] #신조어 퀴즈 #플렉스",
+   "description": "",
+   "channel": "시민몽키",
+   "published": "2026-10-21",
+   "views": 1193,
+   "seconds": 24,
+   "short": true
+  },
+  {
+   "video_id": "purOjCLcc5c",
+   "url": "https://www.youtube.com/watch?v=purOjCLcc5c",
+   "title": "91세 할머니한테 신조어 퀴즈 냈더니 ㅋㅋㅋ #신조어 #밈 #할머니 #세대차이 #L을가져가",
+   "description": "",
+   "channel": "흐이킴",
+   "published": "2026-10-19",
+   "views": 1985,
+   "seconds": 34,
+   "short": true
+  },
+  {
+   "video_id": "pfOCaL8-o1g",
+   "url": "https://www.youtube.com/watch?v=pfOCaL8-o1g",
+   "title": "2025 Korean Meme &amp; Slang Quiz (70 Questions) | 2025 밈·신조어 능력고사 70문제",
+   "description": "0:00 시험 안내 0:18 LEVEL 1 짤 영역 (1~20번) 트랄랄레로·Chill Guy·학씨 2:35 LEVEL 2 신조어 영역 (21~40번) 테토녀·감다살·럭키 ...",
+   "channel": "아하퀴즈",
+   "published": "2026-10-24",
+   "views": 8,
+   "seconds": 510,
+   "short": false
+  },
+  {
+   "video_id": "MXeguiGaBfQ",
+   "url": "https://www.youtube.com/watch?v=MXeguiGaBfQ",
+   "title": "신조어·줄임말 — 신조어 상식 퀴즈 #shorts",
+   "description": "신조어·줄임말 — 몇 개 맞히세요? (쉬움) 영상 보고 정답을 맞혀보세요! 댓글로 점수 남겨주세요 전체 퀴즈·내 점수 기록: ...",
+   "channel": "Fuiz",
+   "published": "2026-10-10",
+   "views": 0,
+   "seconds": 52,
+   "short": true
+  },
+  {
+   "video_id": "u6FTCRmDb6g",
+   "url": "https://www.youtube.com/watch?v=u6FTCRmDb6g",
+   "title": "이게 무슨 뜻이야? 빵 터지는 신조어 퀴즈 현장 #옆집부부 #레전드 #Shorts",
+   "description": "김태연·오유진과 알잘딱깔센 뜻을 맞히던 우럭 여사! 영어라는 힌트에 나온 뜻밖의 대답, “보내!”   “어딜 보내요?”까지 터져버린 ...",
+   "channel": "숏콸콸콸",
+   "published": "2026-09-26",
+   "views": 10068,
+   "seconds": 36,
+   "short": true
+  },
+  {
+   "video_id": "YJIV7Q9YQgM",
+   "url": "https://www.youtube.com/watch?v=YJIV7Q9YQgM",
+   "title": "신조어 퀴즈 물어봤더니 덱스가 내놓은 상상도 못한 답변",
+   "description": "덱스.",
+   "channel": "쇼츠온",
+   "published": "2026-10-01",
+   "views": 19871,
+   "seconds": 22,
+   "short": true
+  },
+  {
+   "video_id": "IlTxqgG6kCU",
+   "url": "https://www.youtube.com/watch?v=IlTxqgG6kCU",
+   "title": "틀딱 동지들을 위한 유행어 85개 뜻 총정리 (2016→2026)",
+   "description": "기준일: 2016년 1월 → 2026년 9월 기준 (네이버 데이터랩 검색어 트렌드) 2016년부터 2026년까지 네이버 검색량이 5위 안에 들었던 ...",
+   "channel": "사회과부도",
+   "published": "2026-10-09",
+   "views": 477,
+   "seconds": 587,
+   "short": false
+  },
+  {
+   "video_id": "g-mZHmQ4c80",
+   "url": "https://www.youtube.com/watch?v=g-mZHmQ4c80",
+   "title": "줴줴이야~ 도대체 무슨 뜻? 30초 만에 정리 #줴줴이야 #GG #유행어 #밈 #신조어 #저라뎃 #요즘유행어 #shorts",
+   "description": "요즘 여기저기서 들리는 그 말, \"줴줴이야~\" 처음 들으면 외국어 같지만… 사실 우리 다 아는 말입니다 줴줴이야 = GG(Good ...",
+   "channel": "아궁금해서참을수가없네",
+   "published": "2026-10-23",
+   "views": 1633,
+   "seconds": 52,
+   "short": true
+  },
+  {
+   "video_id": "qhC2Gj_fZ-M",
+   "url": "https://www.youtube.com/watch?v=qhC2Gj_fZ-M",
+   "title": "요즘 유행한다는 충격적인 유행어",
+   "description": "해기 생방송 채널 - https://bj.afreecatv.com/he0901 / 해기 인스타그램 - https://www.instagram.com/haegi__z/ / 해기 팬카페 ...",
+   "channel": "해기 유튜브",
+   "published": "2026-10-17",
+   "views": 116512,
+   "seconds": 35,
+   "short": true
+  },
+  {
+   "video_id": "Lv6K54cdu8U",
+   "url": "https://www.youtube.com/watch?v=Lv6K54cdu8U",
+   "title": "줴줴이야 뜻, 대체 무슨 말일까? 알고 보면 GG입니다",
+   "description": "요즘 유튜브나 게임 방송에서 자주 들리는 “아 줴줴이야~”. 무슨 뜻인지 궁금하셨나요? 알고 보면 게임 용어 GG에서 시작된 인터넷 밈 ...",
+   "channel": "와와스쿨 wawa-school",
+   "published": "2026-10-01",
+   "views": 57671,
+   "seconds": 49,
+   "short": true
+  },
+  {
+   "video_id": "HALEq_7Y83A",
+   "url": "https://www.youtube.com/watch?v=HALEq_7Y83A",
+   "title": "쿠쿠루삥뽕, 뜻 없는 말이 유행어가 된 이유 #Shorts",
+   "description": "트위치 도네이션 TTS 목소리 '찬구'가 웃음소리 ㅋㅋ루ㅋㅋ를 읽던 소리에서 시작된 유행어 쿠쿠루삥뽕의 유래를 정리했습니다.",
+   "channel": "밈잘알",
+   "published": "2026-10-14",
+   "views": 50,
+   "seconds": 51,
+   "short": true
+  },
+  {
+   "video_id": "WehqI1XKGDI",
+   "url": "https://www.youtube.com/watch?v=WehqI1XKGDI",
+   "title": "영크크 모르면 늙크크? 코르티스 유행어 유래 정리 #Shorts",
+   "description": "코르티스 노래 제목에서 나온 유행어 '영크크'와 그 반대말 '늙크크'를 45초로 정리했습니다. 영크크의 뜻과 유래, 앨범 발매 전부터 ...",
+   "channel": "밈잘알",
+   "published": "2026-10-15",
+   "views": 1375,
+   "seconds": 48,
+   "short": true
+  },
+  {
+   "video_id": "urzST4EXj5w",
+   "url": "https://www.youtube.com/watch?v=urzST4EXj5w",
+   "title": "요즘 한국 유행어 #일본인 #유행어 #shorts",
+   "description": "",
+   "channel": "NORI",
+   "published": "2026-10-08",
+   "views": 211458,
+   "seconds": 54,
+   "short": true
+  },
+  {
+   "video_id": "tfV2Du2icMw",
+   "url": "https://www.youtube.com/watch?v=tfV2Du2icMw",
+   "title": "의외로 전부 한 사람이 만들었다는 유행어들",
+   "description": "",
+   "channel": "뚝딱 상식 뚝배기",
+   "published": "2026-09-30",
+   "views": 1254777,
+   "seconds": 63,
+   "short": true
+  },
+  {
+   "video_id": "6uHLAj1c0D0",
+   "url": "https://www.youtube.com/watch?v=6uHLAj1c0D0",
+   "title": "2026 유행어 대상 이거 제 이모지양🤨",
+   "description": "",
+   "channel": "케이팝덕후",
+   "published": "2026-10-16",
+   "views": 93452,
+   "seconds": 5,
+   "short": true
+  },
+  {
+   "video_id": "oI6A2Yzhmr8",
+   "url": "https://www.youtube.com/watch?v=oI6A2Yzhmr8",
+   "title": "늙크크가 억지로 유행어 쓸 때",
+   "description": "곽범 #김지유 #pH1 #김원훈 #로이킴 매주 목요일 저녁 7시! 곽범, 김지유, pH-1, 김원훈의 영업장으로 초대합니다.",
+   "channel": "십이층",
+   "published": "2026-10-11",
+   "views": 76276,
+   "seconds": 44,
+   "short": true
+  },
+  {
+   "video_id": "R3nV6Cb6FKo",
+   "url": "https://www.youtube.com/watch?v=R3nV6Cb6FKo",
+   "title": "줴줴이야 뜻, 이게 사실 GG였다고?",
+   "description": "'줴줴이야' 뜻, GG와 어떤 관계가 있을까요? 게임 속 Good Game이 어떻게 일상 감탄사가 됐는지, 원본 말투부터 들어봅니다.",
+   "channel": "내궁채",
+   "published": "2026-10-10",
+   "views": 102,
+   "seconds": 44,
+   "short": true
+  },
+  {
+   "video_id": "Vfnkq4xhMsg",
+   "url": "https://www.youtube.com/watch?v=Vfnkq4xhMsg",
+   "title": "어머님! 이게 요즘 유행어입니다😆",
+   "description": "",
+   "channel": "알레프 키즈",
+   "published": "2026-10-02",
+   "views": 431237,
+   "seconds": 15,
+   "short": true
+  },
+  {
+   "video_id": "JqrRioL2yHk",
+   "url": "https://www.youtube.com/watch?v=JqrRioL2yHk",
+   "title": "어쩔티비 저쩔티비, 도대체 무슨 뜻일까? #Shorts",
+   "description": "어쩔티비 하면 저쩔티비로 받아치는 이 유행어, 대체 어디서 왔을까요? 정확한 최초 사용자는 확인되지 않았지만, 확인되는 가장 이른 ...",
+   "channel": "밈잘알",
+   "published": "2026-10-16",
+   "views": 1177,
+   "seconds": 44,
+   "short": true
+  },
+  {
+   "video_id": "MKBvSlhbwGE",
+   "url": "https://www.youtube.com/watch?v=MKBvSlhbwGE",
+   "title": "[모음zip🎬] 이달의 유행어 총정리✨ 밑도 끝도 없이 밀어붙이는 〈유행유행유〉 모음.zip | 개그콘서트/Gag Concert | KBS방송",
+   "description": "유행유행유 ✨ 이달의 유행어 복습 시간! 이번 달 유행어, 혹시 놓치셨다면 지금부터 차근차근 복습해보세요   처음엔 분명 유행어를 ...",
+   "channel": " 개그콘서트",
+   "published": "2026-09-30",
+   "views": 99445,
+   "seconds": 2479,
+   "short": false
+  },
+  {
+   "video_id": "Knvuo9IfuP4",
+   "url": "https://www.youtube.com/watch?v=Knvuo9IfuP4",
+   "title": "줴줴이야 뜻과 유래 총정리, 예 엄·한남 말투 벌금서 짤까지",
+   "description": "중국어처럼 들리지만 시작점은 다른 곳에 있습니다. '줴줴이야'는 게임에서 쓰는 GG를 장난스럽게 변형한 표현으로, 이 밈에서는 주로 ...",
+   "channel": "생활픽",
+   "published": "2026-09-29",
+   "views": 53439,
+   "seconds": 53,
+   "short": true
+  },
+  {
+   "video_id": "jOqEMptxziE",
+   "url": "https://www.youtube.com/watch?v=jOqEMptxziE",
+   "title": "요즘 다들 외치는 &#39;아 줴줴이야~&#39; 무슨 뜻? #shorts004 jwejwe",
+   "description": "일이 꼬일 때마다 들리는 '아 줴줴이야~', 대체 무슨 말일까? 게임이 끝날 때 하는 인사 GG를 특유의 억양으로 외친 SOOP 스트리머 ...",
+   "channel": "밈알못 구조대",
+   "published": "2026-10-14",
+   "views": 1389,
+   "seconds": 34,
+   "short": true
+  },
+  {
+   "video_id": "J3njZ9mTgns",
+   "url": "https://www.youtube.com/watch?v=J3njZ9mTgns",
+   "title": "[모음zip🎬] 유행어 전파의 원조🔥 전설의 〈유전자〉 모음.zip [개그 콘서트/Gag Concert] | KBS방송",
+   "description": "유행어를 전파하는 자, 일명 〈유전자〉   지금은 〈유행유행유〉가 있다면, 그 시절엔 〈유전자〉가 있었다?! 과거의 유행어 전파 ...",
+   "channel": " 개그콘서트",
+   "published": "2026-10-17",
+   "views": 27943,
+   "seconds": 8431,
+   "short": false
+  },
+  {
+   "video_id": "CVltFnLZ6KI",
+   "url": "https://www.youtube.com/watch?v=CVltFnLZ6KI",
+   "title": "유행어 장인이 직접 만들어주는 일본 유행어",
+   "description": "유행어 장인이 직접 만들어주는 일본 유행어 #허경환의유행쇼 #허경환 #유행쇼 #츠키.",
+   "channel": "짤깍",
+   "published": "2026-10-14",
+   "views": 28752,
+   "seconds": 54,
+   "short": true
+  },
+  {
+   "video_id": "ChWv3HlXbqo",
+   "url": "https://www.youtube.com/watch?v=ChWv3HlXbqo",
+   "title": "스트리머들 사이에 퍼지는 유행어 ㅋㅋㅋㅋㅋ",
+   "description": "둬얼 방송국 : https://ch.sooplive.co.kr/qn308dud 🎞️ 둬얼 풀영상 채널 : https://youtube.com/@HanDuoerFullvideo 둬얼 카페 ...",
+   "channel": "한둬얼",
+   "published": "2026-10-17",
+   "views": 744915,
+   "seconds": 138,
+   "short": true
+  },
+  {
+   "video_id": "vyHBl6_bQdM",
+   "url": "https://www.youtube.com/watch?v=vyHBl6_bQdM",
+   "title": "한국에서 &#39;유행어&#39;가 가장 많다는 정치인",
+   "description": "",
+   "channel": "강석주",
+   "published": "2026-10-18",
+   "views": 100745,
+   "seconds": 22,
+   "short": true
+  }
+ ]
+}
