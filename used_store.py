@@ -101,3 +101,51 @@ def save_handle(uid: str, h: str) -> str:
         raise ValueError("인스타 계정 이름은 영문·숫자·밑줄(_)·점(.)으로 30자 이내입니다.")
     obj, sha = _get(f"users/{uid}/profile.json")
     return _put(f"users/{uid}/profile.json", {**(obj or {}), "handle": h}, f"배지 계정 이름({uid})", sha)
+
+
+# ---------- 월요일 아침 알림 메일(동의한 사람만) ----------
+# 이메일은 저장소에 그대로 쓰지 않고 NOTIFY_KEY 로 암호화해 profile.json 에 둔다(저장소가 공개돼도 읽을 수 없다).
+# NOTIFY_KEY 는 Streamlit Secrets 와 GitHub Actions Secrets 양쪽에 같은 값으로 넣는다.
+def _fernet():
+    k = os.environ.get("NOTIFY_KEY", "")
+    if not k:
+        return None
+    from cryptography.fernet import Fernet
+    return Fernet(k.encode())
+
+
+def notify_email(uid: str) -> str:
+    obj, _ = _get(f"users/{uid}/profile.json")
+    enc, f = (obj or {}).get("notify"), _fernet()
+    if not enc or not f:
+        return ""
+    try:
+        return f.decrypt(enc.encode()).decode()
+    except Exception:
+        return ""
+
+
+def set_notify(uid: str, email: str | None) -> str:
+    """email 이 있으면 알림 받기, None 이면 끊기(저장된 이메일도 지운다)."""
+    f = _fernet()
+    if email and not f:
+        raise RuntimeError("알림 메일 설정(NOTIFY_KEY)이 아직 서버에 없습니다.")
+    rel = f"users/{uid}/profile.json"
+    obj, sha = _get(rel)
+    obj = dict(obj or {})
+    if email:
+        obj["notify"] = f.encrypt(email.strip().encode()).decode()
+    else:
+        obj.pop("notify", None)
+    return _put(rel, obj, f"알림 메일 {'켬' if email else '끔'}({uid})", sha)
+
+
+def notify_targets() -> list[tuple[str, str]]:
+    """(사람 id, 이메일) 목록. 저장소 파일을 직접 읽는다(GitHub Actions 용)."""
+    out = []
+    for p in sorted((BASE / "users").glob("*/profile.json")):
+        uid = p.parent.name
+        email = notify_email(uid)
+        if email:
+            out.append((uid, email))
+    return out

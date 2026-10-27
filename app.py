@@ -27,10 +27,12 @@ DEMO = BASE / "samples" / "run_demo"
 DAILY = BASE / "daily"  # 매주 월요일 아침 자동 실행 결과(GitHub Actions)
 USAGE = DATA / "usage.json"
 DAILY_LIMIT = 5  # 한 사람의 하루 실행 횟수(후보 찾기 + 카드 만들기 + 디자인 다시). 우리 키의 무료 한도를 지킨다
+GLOBAL_LIMIT = 30  # 모든 사람을 합친 하루 실행 횟수(Gemini 무료 한도 보호)
+ADMIN_UIDS_DEFAULT = "owner,a1882ab572b0"  # 운영자(Ozoda). 후보 찾기 버튼은 운영자만 누른다(유튜브 한도 보호)
 
 # 배포 서버의 Secrets 를 환경변수로 옮긴다(화면에는 절대 보이지 않음)
 try:
-    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID", "GITHUB_TOKEN"):
+    for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID", "GITHUB_TOKEN", "NOTIFY_KEY", "ADMIN_UIDS"):
         if k in st.secrets and not os.environ.get(k):
             os.environ[k] = str(st.secrets[k])
 except Exception:
@@ -46,6 +48,10 @@ def _usage() -> dict:
         return u if u.get("date") == str(dt.date.today()) else {}
     except Exception:
         return {}
+
+
+def used_all_today() -> int:
+    return sum(_usage().get("counts", {}).values())
 
 
 def used_today(uid: str) -> int:
@@ -131,6 +137,16 @@ with st.sidebar:
             st.rerun()
         except ValueError as e:
             st.error(str(e))
+    if _has_auth() and st.user.get("email"):  # 월요일 아침 알림 메일(동의한 사람만)
+        mail = st.user.get("email")
+        on = bool(used_store.notify_email(uid))
+        want = st.checkbox("월요일 아침 「이번 주 후보」 메일 받기", value=on, help=f"{mail} 로 보냅니다. 이메일은 암호화해 저장하고, 끄면 지웁니다.")
+        if want != on:
+            try:
+                used_store.set_notify(uid, mail if want else None)
+                st.rerun()
+            except RuntimeError as e:
+                st.warning(str(e))
     my_used = used_store.load(uid)
     st.caption(f"Today's Korean 다음 번호: **#{len(my_used) + 1}** · 이미 쓴 표현 {len(my_used)}개")
     if my_used:
@@ -140,7 +156,8 @@ with st.sidebar:
     keys_ok = bool(os.environ.get("YOUTUBE_API_KEY") or (BASE / ".env").exists() or (BASE.parent / ".env").exists())
     demo = st.toggle("데모 모드(저장된 예시로 보기)", value=not keys_ok,
                      help="API 키가 없거나 구글·Gemini 가 막혔을 때 저장된 예시 결과로 흐름을 보여 줍니다.")
-    left = DAILY_LIMIT - used_today(uid)
+    left = min(DAILY_LIMIT - used_today(uid), GLOBAL_LIMIT - used_all_today())
+    is_admin = uid in os.environ.get("ADMIN_UIDS", ADMIN_UIDS_DEFAULT).split(",")
     st.metric("오늘 남은 실행", f"{max(left, 0)} / {DAILY_LIMIT}")
     st.caption("키는 서버에만 있고 이 화면에는 보이지 않습니다.")
 
@@ -152,7 +169,9 @@ if demo:
 # ① 후보
 st.subheader("① 오늘의 후보 찾기")
 st.write("구글 트렌드 「뜻·신조어·밈·줄임말」 급상승과 유튜브 풀이 영상에서 후보를 찾고, 유튜브로 검증한 뒤 AI가 정치·혐오 표현을 거릅니다.")
-if st.button("🔍 오늘의 후보 찾기", disabled=demo or left <= 0):
+if not is_admin:
+    st.caption("후보는 매주 월요일 아침 8시에 자동으로 준비됩니다. 아래 표에서 고르세요.")
+if is_admin and st.button("🔍 오늘의 후보 찾기", disabled=demo or left <= 0):
     import run_pipeline as rp
     with st.spinner("구글 트렌드·유튜브·Gemini 를 차례로 부르는 중… (2~5분)"):
         try:

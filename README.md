@@ -56,3 +56,9 @@ python3 run_pipeline.py make --choose 줴줴이야     # 2부: 카드 문구
 - 월요일 아침 실행이 끝나면 `daily_notify.py` 가 「🟨 이번 주 후보 <날짜>」 GitHub 이슈를 만들고, GitHub 가 저장소 주인(운영자)에게 이메일을 보낸다. 지난주 알림은 자동으로 닫힌다.
 - 알림에는 후보 표와 웹 앱 링크만 있다. 확인·승인은 카드 7장을 보고 웹 앱에서 한다.
 - 사람별 이메일 알림은 다음 단계(동의한 사람에게 Gmail 로 맞춤 후보 보내기).
+
+## 선생님별 알림 메일과 공개 사용
+- 웹 앱 왼쪽 「월요일 아침 「이번 주 후보」 메일 받기」를 켠 사람에게만, 월요일 아침 실행 뒤 `notify_users.py` 가 맞춤 메일을 보낸다(그 사람이 이미 쓴 표현은 빼고, 다음 #번호 안내).
+- 이메일은 `NOTIFY_KEY` 로 암호화해 `users/<id>/profile.json` 에 둔다. 끄면 지운다.
+- 보내기는 Gmail SMTP: GitHub Actions Secrets 에 `GMAIL_USER`, `GMAIL_APP_PASSWORD`(앱 비밀번호), `NOTIFY_KEY`. Streamlit Secrets 에도 같은 `NOTIFY_KEY`.
+- 「후보 찾기」 버튼은 운영자만(`ADMIN_UIDS`). 다른 선생님은 월요일 자동 후보에서 고른다. 모든 사람 합계 하루 30번 상한.

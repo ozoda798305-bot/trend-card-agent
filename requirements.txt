@@ -3,3 +3,4 @@ pytrends
 pandas
 playwright
 streamlit[auth]
+cryptography
