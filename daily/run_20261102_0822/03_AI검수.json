@@ -1,0 +1,258 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "페노메논",
+   "source": "구글 트렌드",
+   "evidence": "페노메논 뜻",
+   "explainer_videos": 2,
+   "views_total": 1548,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "페노메논 뜻 뭐길래? 박진영 국정감사·150억 예산 논란까지",
+     "url": "https://www.youtube.com/watch?v=9zqbtIJXwjo",
+     "description": "최근 관심을 모으고 있는 '페노메논', 무슨 뜻일까요? 페노메논(Phenomenon)은 영어로 '현상'이라는 뜻입니다. 그런데 최근 박진영 ...",
+     "views": 1537
+    },
+    {
+     "title": "페노메논 뜻 뭐길래? 박진영 국정감사·150억 예산 논란까지",
+     "url": "https://www.youtube.com/watch?v=GgxHEKZj-64",
+     "description": "최근 관심을 모으고 있는 '페노메논', 무슨 뜻일까요? 페노메논(Phenomenon)은 영어로 '현상'이라는 뜻입니다. 그런데 최근 박진영 ...",
+     "views": 11
+    }
+   ],
+   "clean": "페노메논",
+   "decision": "빼기",
+   "topic": "정치",
+   "reason": "박진영 국정감사 및 예산 논란 등 정치 및 사건사고 관련 내용이 포함되어 있습니다."
+  },
+  {
+   "expression": "참피",
+   "source": "구글 트렌드",
+   "evidence": "참피 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "참피",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 근거가 없어 유행어 여부 및 숨은 비하 의미에 대한 확인이 필요합니다."
+  },
+  {
+   "expression": "빙모 상",
+   "source": "구글 트렌드",
+   "evidence": "빙모 상 뜻",
+   "explainer_videos": 1,
+   "views_total": 407,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "부고 문자 속 빙모상 진짜 뜻 #빙모상 #빙부상 #빙모상뜻",
+     "url": "https://www.youtube.com/watch?v=H2YPfBDlP0g",
+     "description": "장인어른, 장모님이 돌아가셨을 때 쓰는 표현, 정확히 알고 계신가요? 빙모상은 장모님, 빙부상은 장인어른의 상을 높여 부르는 ...",
+     "views": 407
+    }
+   ],
+   "clean": "빙모상",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "장모님의 상을 뜻하는 관혼상제 관련 일반 단어로 신조어나 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻",
+   "explainer_videos": 1,
+   "views_total": 1549,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "요즘 다들 추는 &#39;L을 가져가&#39; 춤, 무슨 뜻일까? 🤔#shorts #l을가져가",
+     "url": "https://www.youtube.com/watch?v=ayGhY7jf7U8",
+     "description": "지하철에서도, 회사에서도, 미용실에서도 다들 이마에 L! L은 Loss(패배)의 L. 영어 'Take the L'은 \"졌으면 인정해\"라는 뜻이에요.",
+     "views": 1549
+    }
+   ],
+   "clean": "L을 가져가",
+   "decision": "통과",
+   "topic": "",
+   "reason": "영어 'Take the L'에서 유래하여 SNS와 숏폼에서 유행하는 챌린지 표현입니다."
+  },
+  {
+   "expression": "치이 카와",
+   "source": "구글 트렌드",
+   "evidence": "치이 카와 뜻",
+   "explainer_videos": 2,
+   "views_total": 103871,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "치이카와 캐릭터들 이름 뜻",
+     "url": "https://www.youtube.com/watch?v=9EW2Orj7qxg",
+     "description": "본 영상은 오락적 흥미 제공을 목적으로 제작되었으며 영상의 내용을 각색하여 주관적인 해석과 설명을 더한 콘텐츠입니다. 채널 ...",
+     "views": 74463
+    },
+    {
+     "title": "[스포 주의] 세이렌의 &#39;알겠어!&#39;는 무슨 뜻이었을까? #치이카와 #먼작귀 #치이카와극장판 #인어섬의비밀 #Shorts",
+     "url": "https://www.youtube.com/watch?v=wio6M4bCXpw",
+     "description": "치이카와 #먼작귀 #치이카와극장판 ⚠️ 극장판 결말 스포일러가 있어요. 세이렌이 마지막에 외친 '알겠어!'는 정말 '그만할게'였을까?",
+     "views": 29408
+    }
+   ],
+   "clean": "치이카와",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "캐릭터 및 작품의 이름 단독 표기로 외국어 대상 유행 한국어 표현에 적합하지 않습니다."
+  },
+  {
+   "expression": "먼 작귀",
+   "source": "구글 트렌드",
+   "evidence": "먼 작귀 뜻",
+   "explainer_videos": 3,
+   "views_total": 21350,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "먼닭기 (먼작귀라는 뜻)",
+     "url": "https://www.youtube.com/watch?v=KMDEVt4PaSs",
+     "description": "치이카와 #먼작귀.",
+     "views": 19381
+    },
+    {
+     "title": "먼작귀 뜻 | 치이카와 극장판 열흘 만에 100만",
+     "url": "https://www.youtube.com/watch?v=mVj69UmgNRc",
+     "description": "먼작귀는 '먼가 작고 귀여운 녀석', 일본 만화 치이카와 원제 부제를 옮긴 말이에요. 극장판은 개봉 열흘 만에 관객 100만을 넘었어요.",
+     "views": 1581
+    },
+    {
+     "title": "먼작귀 뜻｜카니는 캐릭터가 아닙니다",
+     "url": "https://www.youtube.com/watch?v=HeF-vcZWeTw",
+     "description": "먼작귀 뜻부터 캐릭터·영화·굿즈까지 30초 정리! 먼작귀 = 뭔가 작고 귀여운 녀석, 치이카와의 한국 이름입니다. 카니는 헌책방 캐릭터 ...",
+     "views": 388
+    }
+   ],
+   "clean": "먼작귀",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "일본 만화 '먼가 작고 귀여운 녀석'의 줄임말 작품명으로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "개천절",
+   "source": "구글 트렌드",
+   "evidence": "개천절 뜻",
+   "explainer_videos": 9,
+   "views_total": 9216,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "개천절 뜻과 유래｜왜 10월 3일을 ‘하늘이 열린 날’이라고 할까",
+     "url": "https://www.youtube.com/watch?v=Xxh2gXCY4qk",
+     "description": "개천절 뜻을 한자로 풀면 '하늘이 열린 것을 기념하는 날'입니다. 그런데 고조선 건국을 기념하는 날인데 왜 '건국절'이 아니라 '개천절' ...",
+     "views": 2035
+    },
+    {
+     "title": "개천절의 의미  #개천철  #개천절의의미  #오래된책방",
+     "url": "https://www.youtube.com/watch?v=NYrl66eEG9U",
+     "description": "",
+     "views": 1464
+    },
+    {
+     "title": "10월 3일 개천절, 고조선 기록 속 숨겨진 의미 #한국사 #역사쇼츠 #한국사 #역사",
+     "url": "https://www.youtube.com/watch?v=2D0Maj1N9hQ",
+     "description": "매년 10월 3일 개천절, 우리는 단군의 고조선 건국을 기념합니다. 그런데 기록 속 '상달'은 단순한 날짜가 아니었습니다. 하늘에 제사를 ...",
+     "views": 1373
+    }
+   ],
+   "clean": "개천절",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "한국의 국경일 명칭으로 유행어가 아닌 일반 고유명사 및 단어입니다."
+  },
+  {
+   "expression": "소구 점",
+   "source": "구글 트렌드",
+   "evidence": "소구 점 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "소구점",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 유튜브 근거가 부족하며 일반 마케팅 전문 용어인지 추가 확인이 필요합니다."
+  },
+  {
+   "expression": "줴줴 이야",
+   "source": "구글 트렌드",
+   "evidence": "줴줴 이야 뜻",
+   "explainer_videos": 10,
+   "views_total": 157734,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "진짜 무슨뜻이에요? ㅋㅋㅋ 아니 모르겠어요🙄 #줴줴이야",
+     "url": "https://www.youtube.com/watch?v=6o0d2wMtxQA",
+     "description": "",
+     "views": 124004
+    },
+    {
+     "title": "줴줴이야가 무슨 뜻이에요 ? || #jujutsukaisen #생활음계",
+     "url": "https://www.youtube.com/watch?v=B7g7dInjEqA",
+     "description": "",
+     "views": 24350
+    },
+    {
+     "title": "#줴줴이야🥵 막차인가?#줴줴이야 뜻 뭐에요?",
+     "url": "https://www.youtube.com/watch?v=x2BwxcruH_g",
+     "description": "",
+     "views": 2431
+    }
+   ],
+   "clean": "줴줴이야",
+   "decision": "통과",
+   "topic": "",
+   "reason": "숏폼 및 챌린지 등에서 자주 사용되는 유효한 유행 표현입니다."
+  },
+  {
+   "expression": "하치 와 레",
+   "source": "구글 트렌드",
+   "evidence": "하치 와 레 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "하치와레",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 정보가 없으며 캐릭터명 등 고유명사인지 추가 확인이 필요합니다."
+  },
+  {
+   "expression": "운지",
+   "source": "구글 트렌드",
+   "evidence": "운지 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "운지",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 근거 자료가 부족하여 비하·혐오 표현 여부에 대한 추가 인적 검수가 필요합니다."
+  },
+  {
+   "expression": "어닝 콜",
+   "source": "구글 트렌드",
+   "evidence": "어닝 콜 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "어닝콜",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제공된 근거가 없으며 단순 경제 외래어 용어인지 확인이 필요합니다."
+  }
+ ]
+}
