@@ -1,0 +1,233 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "닥터 x",
+   "source": "구글 트렌드",
+   "evidence": "닥터 x 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "닥터 X",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 제목과 설명 등 유행 표현 여부를 판단할 수 있는 근거가 부족합니다."
+  },
+  {
+   "expression": "안 잠자기",
+   "source": "구글 트렌드",
+   "evidence": "안 잠자기 뜻",
+   "explainer_videos": 7,
+   "views_total": 8109,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "요즘 드라마 속 안잠자기 뜻 #안잠자기 #순우리말 #드라마명대사",
+     "url": "https://www.youtube.com/watch?v=Qdwspwn-YVw",
+     "description": "드라마 보다가 안잠자기 뜻 보고 멈칫하신 분? 잠 안 자는 사람인 줄 알았는데, 사실 남의 집에서 먹고 자며 집안일을 돕던 여성을 뜻 ...",
+     "views": 3104
+    },
+    {
+     "title": "사극에 나오는 안잠자기의 뜻 #안잠자기 #순우리말 #우리말상식",
+     "url": "https://www.youtube.com/watch?v=HpU_1qkVfOk",
+     "description": "드라마 보다가 '안잠자기'라는 단어 들어보셨나요? ❌ 잠을 안 자는 사람이 아니라, 옛날 남의 집에서 먹고 자며 살림을 돕던 '입주 ...",
+     "views": 1319
+    },
+    {
+     "title": "드라마 속 안잠자기 진짜 의미는 #안잠자기 #순우리말 #우리말",
+     "url": "https://www.youtube.com/watch?v=hi3TkZsw0lM",
+     "description": "'밤에 잠 안 자는 사람'인 줄 알았죠? 드라마에 나온 단어 '안잠자기'의 진짜 뜻! 남의 집에서 먹고 자며 살림을 돕던 사람을 뜻하는 순 ...",
+     "views": 1298
+    }
+   ],
+   "clean": "안잠자기",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "사극에 등장한 순우리말 고어로 일반 단어에 해당하여 제외합니다."
+  },
+  {
+   "expression": "빙모 상",
+   "source": "구글 트렌드",
+   "evidence": "빙모 상 뜻",
+   "explainer_videos": 1,
+   "views_total": 421,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "부고 문자 속 빙모상 진짜 뜻 #빙모상 #빙부상 #빙모상뜻",
+     "url": "https://www.youtube.com/watch?v=H2YPfBDlP0g",
+     "description": "장인어른, 장모님이 돌아가셨을 때 쓰는 표현, 정확히 알고 계신가요? 빙모상은 장모님, 빙부상은 장인어른의 상을 높여 부르는 ...",
+     "views": 421
+    }
+   ],
+   "clean": "빙모상",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "장모의 상을 높여 부르는 일반적인 경조사 용어로 유행 신조어가 아닙니다."
+  },
+  {
+   "expression": "백화 요란",
+   "source": "구글 트렌드",
+   "evidence": "백화 요란 뜻",
+   "explainer_videos": 4,
+   "views_total": 238906,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "팬들이 뒤늦게 알아챈 백화요란 숨은 의미 🌸 메이만 흰옷인 이유? #리센느 #RESCENE #백화요란",
+     "url": "https://www.youtube.com/watch?v=2nsqNGdPSqw",
+     "description": "다섯 명 중 한 명만 흰옷…? 팬들이 댓글로 찾아낸 '백화요란' 무대 속 디테일 \"이제보니 햇살이라서 메이혼자 흰색옷입었나보네 ...",
+     "views": 150269
+    },
+    {
+     "title": "데뷔날 던진 떡밥 회수한 리센느 백화요란 뜻",
+     "url": "https://www.youtube.com/watch?v=RaBkhDkFN0A",
+     "description": "이 영상은 단순 재업로드가 아닌 직접 컷편집, 자막 제작, 해설, 보이스오버 등 창작 요소를 포함한 '재가공 콘텐츠'입니다. 원본 출처는 ...",
+     "views": 84540
+    },
+    {
+     "title": "&#39;백화요란&#39; 뜻 알고 보면 더 극락인 파트 #리센느 #백화요란 #RESCENE #shorts",
+     "url": "https://www.youtube.com/watch?v=SeNZcoxrpwo",
+     "description": "'백화요란' = 온갖 꽃이 한꺼번에 피어 흐드러진 모습을 일컫는 사자성어 미나미가 서예로 썼던 이 글이 리센느 미니 4집 [PULSE] ...",
+     "views": 2899
+    }
+   ],
+   "clean": "백화요란",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "아이돌 그룹 리센느의 노래 제목 및 콘셉트 관련 표현으로 작품 이름에 해당합니다."
+  },
+  {
+   "expression": "라이어",
+   "source": "구글 트렌드",
+   "evidence": "라이어 뜻",
+   "explainer_videos": 1,
+   "views_total": 297744,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "[라이어 거짓말 엔딩] ＂당신이에요＂ 서현진에게 돌아온 뜻밖의 결과, MBC 261031 방송",
+     "url": "https://www.youtube.com/watch?v=7dn31R_E-Hg",
+     "description": "라이어 #유연석 #서현진 More clips are available iMBC https://program.imbc.com/ThePerfectLie c MBC&iMBC 무단 ...",
+     "views": 297744
+    }
+   ],
+   "clean": "라이어",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "방송 드라마 제목 및 일반 외래어 단어 표현에 해당하여 제외합니다."
+  },
+  {
+   "expression": "오시 헨",
+   "source": "구글 트렌드",
+   "evidence": "오시 헨 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "오시헨",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 제목과 설명 등 유행 표현 여부를 판단할 수 있는 근거가 부족합니다."
+  },
+  {
+   "expression": "참피",
+   "source": "구글 트렌드",
+   "evidence": "참피 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "참피",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 제목과 설명 등 유행 표현 여부를 판단할 수 있는 근거가 부족합니다."
+  },
+  {
+   "expression": "어닝 콜",
+   "source": "구글 트렌드",
+   "evidence": "어닝 콜 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "어닝콜",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 제목과 설명 등 유행 표현 여부를 판단할 수 있는 근거가 부족합니다."
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻",
+   "explainer_videos": 1,
+   "views_total": 1608,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "요즘 다들 추는 &#39;L을 가져가&#39; 춤, 무슨 뜻일까? 🤔#shorts #l을가져가",
+     "url": "https://www.youtube.com/watch?v=ayGhY7jf7U8",
+     "description": "지하철에서도, 회사에서도, 미용실에서도 다들 이마에 L! L은 Loss(패배)의 L. 영어 'Take the L'은 \"졌으면 인정해\"라는 뜻이에요.",
+     "views": 1608
+    }
+   ],
+   "clean": "L을 가져가",
+   "decision": "통과",
+   "topic": "",
+   "reason": "패배를 인정하라는 의미로 최근 댄스 챌린지와 함께 쓰이는 유행 표현입니다."
+  },
+  {
+   "expression": "운지",
+   "source": "구글 트렌드",
+   "evidence": "운지 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "운지",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "제시된 근거가 부족하나 금지 주제 관련 비하 표현 가능성이 있어 확인이 필요합니다."
+  },
+  {
+   "expression": "하치 와 레",
+   "source": "구글 트렌드",
+   "evidence": "하치 와 레 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "하치와레",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 제목과 설명 등 유행 표현 여부를 판단할 수 있는 근거가 부족합니다."
+  },
+  {
+   "expression": "먼 작귀",
+   "source": "구글 트렌드",
+   "evidence": "먼 작귀 뜻",
+   "explainer_videos": 2,
+   "views_total": 34294,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "먼닭기 (먼작귀라는 뜻)",
+     "url": "https://www.youtube.com/watch?v=KMDEVt4PaSs",
+     "description": "치이카와 #먼작귀.",
+     "views": 33692
+    },
+    {
+     "title": "먼작귀 뜻｜카니는 캐릭터가 아닙니다",
+     "url": "https://www.youtube.com/watch?v=HeF-vcZWeTw",
+     "description": "먼작귀 뜻부터 캐릭터·영화·굿즈까지 30초 정리! 먼작귀 = 뭔가 작고 귀여운 녀석, 치이카와의 한국 이름입니다. 카니는 헌책방 캐릭터 ...",
+     "views": 602
+    }
+   ],
+   "clean": "먼작귀",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "'뭔가 작고 귀여운 녀석'을 뜻하는 캐릭터 및 작품 이름에 해당합니다."
+  }
+ ]
+}
