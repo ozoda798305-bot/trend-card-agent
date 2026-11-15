@@ -1,0 +1,252 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "백화 요란",
+   "source": "구글 트렌드",
+   "evidence": "백화 요란 뜻",
+   "explainer_videos": 2,
+   "views_total": 337822,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "팬들이 뒤늦게 알아챈 백화요란 숨은 의미 🌸 메이만 흰옷인 이유? #리센느 #RESCENE #백화요란",
+     "url": "https://www.youtube.com/watch?v=2nsqNGdPSqw",
+     "description": "다섯 명 중 한 명만 흰옷…? 팬들이 댓글로 찾아낸 '백화요란' 무대 속 디테일 \"이제보니 햇살이라서 메이혼자 흰색옷입었나보네 ...",
+     "views": 252254
+    },
+    {
+     "title": "데뷔날 던진 떡밥 회수한 리센느 백화요란 뜻",
+     "url": "https://www.youtube.com/watch?v=RaBkhDkFN0A",
+     "description": "이 영상은 단순 재업로드가 아닌 직접 컷편집, 자막 제작, 해설, 보이스오버 등 창작 요소를 포함한 '재가공 콘텐츠'입니다. 원본 출처는 ...",
+     "views": 85568
+    }
+   ],
+   "clean": "백화요란",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "아이돌 그룹의 곡명 및 콘텐츠 관련 명칭으로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "닥터 x",
+   "source": "구글 트렌드",
+   "evidence": "닥터 x 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "닥터 X",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 결과 등 근거 정보가 부족하여 유행 표현 여부를 판단하기 어렵습니다."
+  },
+  {
+   "expression": "어닝 콜",
+   "source": "구글 트렌드",
+   "evidence": "어닝 콜 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "어닝콜",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 결과 등 근거 정보가 부족하여 유행 표현 여부를 판단하기 어렵습니다."
+  },
+  {
+   "expression": "참피",
+   "source": "구글 트렌드",
+   "evidence": "참피 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "참피",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 결과 등 근거 정보가 부족하여 판단이 어렵습니다."
+  },
+  {
+   "expression": "빙모 상",
+   "source": "구글 트렌드",
+   "evidence": "빙모 상 뜻",
+   "explainer_videos": 1,
+   "views_total": 490,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "부고 문자 속 빙모상 진짜 뜻 #빙모상 #빙부상 #빙모상뜻",
+     "url": "https://www.youtube.com/watch?v=H2YPfBDlP0g",
+     "description": "장인어른, 장모님이 돌아가셨을 때 쓰는 표현, 정확히 알고 계신가요? 빙모상은 장모님, 빙부상은 장인어른의 상을 높여 부르는 ...",
+     "views": 490
+    }
+   ],
+   "clean": "빙모상",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "장모님의 상을 뜻하는 격식 차린 한자어로 신조어나 유행 표현이 아닌 일반 단어입니다."
+  },
+  {
+   "expression": "엣지 러너",
+   "source": "구글 트렌드",
+   "evidence": "엣지 러너 뜻",
+   "explainer_videos": 1,
+   "views_total": 918320,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "엄마의 뜻대로 전설이 된 데이비드 #사이버펑크 #엣지러너",
+     "url": "https://www.youtube.com/watch?v=j7TLHe_lr_A",
+     "description": "",
+     "views": 918320
+    }
+   ],
+   "clean": "엣지러너",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "애니메이션 작품 이름으로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "라이어",
+   "source": "구글 트렌드",
+   "evidence": "라이어 뜻",
+   "explainer_videos": 1,
+   "views_total": 311269,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "[라이어 거짓말 엔딩] ＂당신이에요＂ 서현진에게 돌아온 뜻밖의 결과, MBC 261031 방송",
+     "url": "https://www.youtube.com/watch?v=7dn31R_E-Hg",
+     "description": "라이어 #유연석 #서현진 More clips are available iMBC https://program.imbc.com/ThePerfectLie c MBC&iMBC 무단 ...",
+     "views": 311269
+    }
+   ],
+   "clean": "라이어",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "방송 프로그램 제목이나 외래어로 유행 표현이 아닙니다."
+  },
+  {
+   "expression": "삼재",
+   "source": "구글 트렌드",
+   "evidence": "삼재 뜻",
+   "explainer_videos": 3,
+   "views_total": 3171,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "삼재 뜻, 세 가지 재앙은 무엇이고 누구에게 들까?",
+     "url": "https://www.youtube.com/watch?v=KTgRWuFgnlQ",
+     "description": "삼재는 사람에게 닥치는 세 가지 재해를 묶어 부르는 민간의 말이오. 백과사전은 물·불·바람의 재해와 전쟁·돌림병·굶주림을 들었고, ...",
+     "views": 1230
+    },
+    {
+     "title": "🪷 「불자 이야기」 들삼재·눌삼재·날삼재, 정말 3년 동안 조심해야 할까요? 불교에서 말하는 삼재(三災)의 참뜻",
+     "url": "https://www.youtube.com/watch?v=UxlgGLFe0wQ",
+     "description": "들삼재·눌삼재·날삼재, 정말 3년 동안 조심해야 할까요? 해마다 정초가 되면 \"올해 내 띠가 삼재라던데…\" 하며 마음이 무거워지는 ...",
+     "views": 1075
+    },
+    {
+     "title": "삼재 뜻 1분 정리｜들삼재·눌삼재·날삼재 차이 #shorts",
+     "url": "https://www.youtube.com/watch?v=xaL-Rx_3tZ8",
+     "description": "오늘의 운세 무료로 보기: https://borisaju.com/today 꿈해몽 무료로 보기: https://borisaju.com/dream ▷ 2027 돼지띠 운세 자세히: ...",
+     "views": 866
+    }
+   ],
+   "clean": "삼재",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "세 가지 재앙을 뜻하는 민간 신앙 및 풍속 관련 일반 단어입니다."
+  },
+  {
+   "expression": "오시 헨",
+   "source": "구글 트렌드",
+   "evidence": "오시 헨 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "오시헨",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 결과 등 근거 정보가 부족하여 유행 표현 여부를 판단하기 어렵습니다."
+  },
+  {
+   "expression": "윤슬",
+   "source": "구글 트렌드",
+   "evidence": "윤슬 뜻",
+   "explainer_videos": 5,
+   "views_total": 745,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "2026-11-2 &#39; 윤슬 &#39;은 햇빛이나 달빛에 비치어 반짝이는 잔물결을 뜻하는 말입니다 - 전남 목포",
+     "url": "https://www.youtube.com/watch?v=80SbuCUmspE",
+     "description": "",
+     "views": 229
+    },
+    {
+     "title": "윤슬·미리내, 아는 단어의 뜻을 골라보세요 10문제 #Shorts",
+     "url": "https://www.youtube.com/watch?v=u4qWzLCZVRU",
+     "description": "고르면반전 | 아는 단어 뜻은 반전 매 문제 A·B·C 중 하나를 고르고, 정답과 짧은 해설을 확인하세요. 10문제 중 몇 개를 맞혔나요?",
+     "views": 210
+    },
+    {
+     "title": "[윤슬하얀갬성] &#39;비우고 채우기&#39; 물질이던 인연이던 미련의 무거운 짐을 놓아야  변화가 찾아 온다는 뜻으로 만든 곡입니다. 🍁distrokid 음원발매_유튜브 사운드",
+     "url": "https://www.youtube.com/watch?v=Xa92HV7yiaw",
+     "description": "비우고 채우기 길 끝에 서니 바람이 묻네 이 길을 계속 갈 것인지 아니면 지금 여기서 돌아설 것인지 손에 쥔 건 모두 허상일 뿐 부질 ...",
+     "views": 164
+    }
+   ],
+   "clean": "윤슬",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "햇빛이나 달빛에 비치어 반짝이는 잔물결을 뜻하는 일반 순우리말 단어입니다."
+  },
+  {
+   "expression": "l 을 가져 가",
+   "source": "구글 트렌드",
+   "evidence": "l 을 가져 가 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "L을 가져가",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "유튜브 검색 결과 등 근거 정보가 부족하여 판단이 어렵습니다."
+  },
+  {
+   "expression": "야르",
+   "source": "구글 트렌드",
+   "evidence": "야르",
+   "explainer_videos": 8,
+   "views_total": 36174,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "쏘니에게 요즘 유행하는 &#39;야르&#39; 뜻을 물어봤습니다 ㅋㅋ #shorts",
+     "url": "https://www.youtube.com/watch?v=ZBQc0Ki_Fz4",
+     "description": "팬과 소통하는 쏘니의 유쾌한 모습! 요즘 유행하는 밈 '야르'를 물어본 결과는?! 손흥민의 리얼 반응 대공개. 웃음이 끊이지 않는 축구 ...",
+     "views": 18828
+    },
+    {
+     "title": "아무도 몰랐던 &#39;야르&#39;의 진짜 의미",
+     "url": "https://www.youtube.com/watch?v=Q4W2gGuwuHA",
+     "description": "제로베이스원 #박건욱 #zerobaseone #emp Instagram : https://www.Instagram.com/bellygom.official TiKtoK ...",
+     "views": 11580
+    },
+    {
+     "title": "요즘 쓰는 ‘야르’ 뜻, 알고 있나요? 🤔 #shorts",
+     "url": "https://www.youtube.com/watch?v=F-xF3XBj4Zc",
+     "description": "요즘 쓰는 신조어 '야르'의 뜻을 알려주는 영상을 Google Flow로 한번 만들어봤어요. AI가 설명하는 '야르', 함께 알아볼까요? #야르 ...",
+     "views": 1398
+    }
+   ],
+   "clean": "야르",
+   "decision": "통과",
+   "topic": "",
+   "reason": "최근 대중적으로 널리 쓰이는 유행 밈 표현입니다."
+  }
+ ]
+}
