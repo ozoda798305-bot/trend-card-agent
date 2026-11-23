@@ -1,0 +1,239 @@
+{
+ "model": "gemini-3.5-flash",
+ "items": [
+  {
+   "expression": "리트 냥이",
+   "source": "구글 트렌드",
+   "evidence": "리트 냥이 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "리트냥이",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 검색 결과가 없어 추가 확인이 필요합니다."
+  },
+  {
+   "expression": "세무 냥이",
+   "source": "구글 트렌드",
+   "evidence": "세무 냥이 뜻",
+   "explainer_videos": 1,
+   "views_total": 54236,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "세무냥이의 컨닝 자백이 불러온 뜻밖의 비교",
+     "url": "https://www.youtube.com/watch?v=y6zoB1lacoc",
+     "description": "세무냥이의 컨닝 자백이 불러온 뜻밖의 비교 세무냥이의 자백 이후 다시 주목받은 합격 인터뷰 공부법에 대한 설명부터 교재와 즉석 ...",
+     "views": 54236
+    }
+   ],
+   "clean": "세무냥이",
+   "decision": "빼기",
+   "topic": "사건사고",
+   "reason": "세무사 시험 부정행위 사건 관련 필명에서 유래한 표현이므로 제외합니다."
+  },
+  {
+   "expression": "냥이",
+   "source": "구글 트렌드",
+   "evidence": "냥이 뜻",
+   "explainer_videos": 1,
+   "views_total": 184916,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "&#39;부정 시험&#39; 밈이 된 &#39;XX냥이&#39; 딱지..이번엔 &#39;한전냥이&#39; 의혹, 전말은? (자막뉴스) / SBS",
+     "url": "https://www.youtube.com/watch?v=s8PDTZc1sq8",
+     "description": "올해 세무사 시험 수석 합격자 한 모씨가 AI 부정행위를 시인한 것과 관련해, 과거 한 씨가 '세무냥이'라는 필명을 쓴 데 착안해 각종 ...",
+     "views": 184916
+    }
+   ],
+   "clean": "냥이",
+   "decision": "빼기",
+   "topic": "사건사고",
+   "reason": "시험 부정행위 사건 관련 밈으로 쓰이고 있어 제외합니다."
+  },
+  {
+   "expression": "리트",
+   "source": "구글 트렌드",
+   "evidence": "리트 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "리트",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 구체적인 활용 정보가 없어 추가 확인이 필요합니다."
+  },
+  {
+   "expression": "생동 차",
+   "source": "구글 트렌드",
+   "evidence": "생동 차 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "생동차",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 관련 정보가 제공되지 않아 확인이 필요합니다."
+  },
+  {
+   "expression": "라이어",
+   "source": "구글 트렌드",
+   "evidence": "라이어 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "라이어",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 관련 정보가 제공되지 않아 확인이 필요합니다."
+  },
+  {
+   "expression": "어닝 콜",
+   "source": "구글 트렌드",
+   "evidence": "어닝 콜 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "어닝콜",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 관련 정보가 제공되지 않아 확인이 필요합니다."
+  },
+  {
+   "expression": "백화 요란",
+   "source": "구글 트렌드",
+   "evidence": "백화 요란 뜻",
+   "explainer_videos": 4,
+   "views_total": 354712,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "팬들이 뒤늦게 알아챈 백화요란 숨은 의미 🌸 메이만 흰옷인 이유? #리센느 #RESCENE #백화요란",
+     "url": "https://www.youtube.com/watch?v=2nsqNGdPSqw",
+     "description": "다섯 명 중 한 명만 흰옷…? 팬들이 댓글로 찾아낸 '백화요란' 무대 속 디테일 \"이제보니 햇살이라서 메이혼자 흰색옷입었나보네 ...",
+     "views": 264097
+    },
+    {
+     "title": "데뷔날 던진 떡밥 회수한 리센느 백화요란 뜻",
+     "url": "https://www.youtube.com/watch?v=RaBkhDkFN0A",
+     "description": "이 영상은 단순 재업로드가 아닌 직접 컷편집, 자막 제작, 해설, 보이스오버 등 창작 요소를 포함한 '재가공 콘텐츠'입니다. 원본 출처는 ...",
+     "views": 85923
+    },
+    {
+     "title": "&#39;백화요란&#39; 뜻 알고 보면 더 극락인 파트 #리센느 #백화요란 #RESCENE #shorts",
+     "url": "https://www.youtube.com/watch?v=SeNZcoxrpwo",
+     "description": "'백화요란' = 온갖 꽃이 한꺼번에 피어 흐드러진 모습을 일컫는 사자성어 미나미가 서예로 썼던 이 글이 리센느 미니 4집 [PULSE] ...",
+     "views": 3198
+    }
+   ],
+   "clean": "백화요란",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "아이돌 그룹 리센느의 노래 제목(작품 이름)으로 일반 유행 표현으로 보기 힘들어 제외합니다."
+  },
+  {
+   "expression": "닥터 x",
+   "source": "구글 트렌드",
+   "evidence": "닥터 x 뜻",
+   "explainer_videos": 0,
+   "views_total": 0,
+   "verdict": "쓰임 없음",
+   "top_videos": [],
+   "clean": "닥터X",
+   "decision": "사람 확인",
+   "topic": "",
+   "reason": "근거 영상 및 관련 정보가 제공되지 않아 확인이 필요합니다."
+  },
+  {
+   "expression": "카르마",
+   "source": "구글 트렌드",
+   "evidence": "카르마 뜻",
+   "explainer_videos": 1,
+   "views_total": 298,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "업보 받는다? 부처님이 말한 업은 벌이 아니었다 | 카르마의 진짜 뜻 · 런던 택시 기사 실험 | 온사 불교 이야기 10화",
+     "url": "https://www.youtube.com/watch?v=NRnRXrAo2JI",
+     "description": "'다 네 업보다' — 우리는 업보를 벌처럼 씁니다. 그런데 카르마(karma)의 원래 뜻은 '행위'. 부처님은 '나는 의도를 업이라고 말한다'( ...",
+     "views": 298
+    }
+   ],
+   "clean": "카르마",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "불교 및 철학 용어인 일반 외래어로 SNS 유행 표현에 해당하지 않아 제외합니다."
+  },
+  {
+   "expression": "윤슬",
+   "source": "구글 트렌드",
+   "evidence": "윤슬 뜻",
+   "explainer_videos": 6,
+   "views_total": 3234,
+   "verdict": "사용 확인",
+   "top_videos": [
+    {
+     "title": "🪷 &#39;색즉시공&#39;, 매일 외우면서도 몰랐던 뜻 | 윤슬 스님의 반야심경 한마디",
+     "url": "https://www.youtube.com/watch?v=bH7aUfSsp1c",
+     "description": "반야심경에서 가장 많이 외우는 구절, 색즉시공 공즉시색. 모습이 곧 빈 것이요, 빈 것이 곧 모습이라. 어제 흐르던 물과 오늘 흐르는 ...",
+     "views": 2442
+    },
+    {
+     "title": "2026-11-2 &#39; 윤슬 &#39;은 햇빛이나 달빛에 비치어 반짝이는 잔물결을 뜻하는 말입니다 - 전남 목포",
+     "url": "https://www.youtube.com/watch?v=80SbuCUmspE",
+     "description": "",
+     "views": 229
+    },
+    {
+     "title": "[윤슬하얀갬성] &#39;비우고 채우기&#39; 물질이던 인연이던 미련의 무거운 짐을 놓아야  변화가 찾아 온다는 뜻으로 만든 곡입니다. 🍁distrokid 음원발매_유튜브 사운드",
+     "url": "https://www.youtube.com/watch?v=Xa92HV7yiaw",
+     "description": "비우고 채우기 길 끝에 서니 바람이 묻네 이 길을 계속 갈 것인지 아니면 지금 여기서 돌아설 것인지 손에 쥔 건 모두 허상일 뿐 부질 ...",
+     "views": 223
+    }
+   ],
+   "clean": "윤슬",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "잔물결을 뜻하는 일반 순우리말 단어로 신조어나 유행 표현이 아니므로 제외합니다."
+  },
+  {
+   "expression": "삼재",
+   "source": "구글 트렌드",
+   "evidence": "삼재 뜻",
+   "explainer_videos": 4,
+   "views_total": 4654,
+   "verdict": "약함",
+   "top_videos": [
+    {
+     "title": "🪷 「불자 이야기」 들삼재·눌삼재·날삼재, 정말 3년 동안 조심해야 할까요? 불교에서 말하는 삼재(三災)의 참뜻",
+     "url": "https://www.youtube.com/watch?v=UxlgGLFe0wQ",
+     "description": "들삼재·눌삼재·날삼재, 정말 3년 동안 조심해야 할까요? 해마다 정초가 되면 \"올해 내 띠가 삼재라던데…\" 하며 마음이 무거워지는 ...",
+     "views": 1519
+    },
+    {
+     "title": "삼재 뜻, 세 가지 재앙은 무엇이고 누구에게 들까?",
+     "url": "https://www.youtube.com/watch?v=KTgRWuFgnlQ",
+     "description": "삼재는 사람에게 닥치는 세 가지 재해를 묶어 부르는 민간의 말이오. 백과사전은 물·불·바람의 재해와 전쟁·돌림병·굶주림을 들었고, ...",
+     "views": 1270
+    },
+    {
+     "title": "🌕 「불자 이야기」 삼재가 든 해, 경전에 적힌 삼재막이는 뜻밖에 소박합니다 #shorts #삼재 #불자이야기",
+     "url": "https://www.youtube.com/watch?v=4zsFh8PmN74",
+     "description": "\"삼재는 두려워하는 해가 아니라\" — 돈복 스님 올해 삼재라는 말에 마음이 무거우셨나요. 구사론에 적힌 삼재를 만나지 않는 길은, ...",
+     "views": 990
+    }
+   ],
+   "clean": "삼재",
+   "decision": "빼기",
+   "topic": "",
+   "reason": "세 가지 재앙을 뜻하는 전통 민간 신앙의 일반 단어로 최신 유행 표현이 아니므로 제외합니다."
+  }
+ ]
+}
