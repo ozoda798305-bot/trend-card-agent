@@ -33,8 +33,14 @@ ADMIN_UIDS_DEFAULT = "owner,a1882ab572b0"  # 운영자(Ozoda). 후보 찾기 버
 # 배포 서버의 Secrets 를 환경변수로 옮긴다(화면에는 절대 보이지 않음)
 try:
     for k in ("YOUTUBE_API_KEY", "GEMINI_API_KEY", "DEMO_PASSWORD", "BLOTATO_API_KEY", "BLOTATO_ACCOUNT_ID", "GITHUB_TOKEN", "NOTIFY_KEY", "ADMIN_UIDS"):
-        if k in st.secrets and not os.environ.get(k):
+        if os.environ.get(k):
+            continue
+        if k in st.secrets:
             os.environ[k] = str(st.secrets[k])
+        else:  # 실수로 [auth] 같은 묶음 아래에 넣어도 찾는다
+            for v in st.secrets.values():
+                if hasattr(v, "keys") and k in v:
+                    os.environ[k] = str(v[k]); break
 except Exception:
     pass
 
