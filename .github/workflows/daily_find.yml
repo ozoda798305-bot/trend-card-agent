@@ -1,5 +1,5 @@
 # 매주 월요일 아침 8시(한국 시각)에 후보 찾기만 자동으로 돌리고, 결과를 daily/ 폴더에 올린다.
-# 끝나면 「이번 주 후보」 GitHub 이슈를 만들어 운영자에게 이메일 알림을 보낸다(확인·승인은 웹 앱에서).
+# 끝나면 「이번 주 후보」 GitHub 이슈(운영자)와, 알림을 켠 선생님마다 맞춤 메일을 보낸다(확인·승인은 웹 앱에서).
 # 웹 앱(Streamlit)이 다시 시작되며 daily/ 의 최신 후보 표를 보여 준다. 고르기·카드·승인·예약은 사람이 한다.
 # 키: 저장소 Settings → Secrets and variables → Actions 에 YOUTUBE_API_KEY, GEMINI_API_KEY
 name: daily-find
@@ -18,12 +18,15 @@ jobs:
       TZ: Asia/Seoul
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      NOTIFY_KEY: ${{ secrets.NOTIFY_KEY }}
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests pytrends pandas
+      - run: pip install requests pytrends pandas cryptography
       - run: python run_pipeline.py find
       - name: daily/ 에 올리기
         run: |
@@ -44,3 +47,5 @@ jobs:
           gh label create daily --color FFD43B --description "아침 자동 실행 알림" --force
           for n in $(gh issue list --label daily --state open --json number --jq '.[].number'); do gh issue close "$n"; done
           gh issue create --title "$(cat title.txt)" --body-file body.md --label daily
+      - name: 선생님별 알림 메일(알림을 켠 사람만)
+        run: python notify_users.py "$RUN_DIR"
